@@ -205,7 +205,7 @@ const Home = () => {
             devices.
           </p>
           <div className="flex gap-10 justify-center items-center">
-            <a href="/FAHMIDA NIMRA Resume-MERN Stack Developer-fahmidanimra@gmail.com.pdf" download="Fahamida-Nimra-Resume.pdf">
+            <a href="/FAHMIDA NIMRA Resume-MERN Stack Developer-fahmidanimra@gmail.com.pdf" download="FAHMIDA NIMRA Resume-MERN Stack Developer-fahmidanimra@gmail.pdf">
                  <button className="btnResume">Resume</button>
             </a>
             <button onClick={scrollToContact} className="btnResume">Contact Me</button>
@@ -246,9 +246,9 @@ const Home = () => {
       <div className="max-w-5xl mx-auto">
         <h2
           className="
-            text-5xl font-extrabold text-center libertinus mb-12
-            bg-gradient-to-r from-white to-[#e168ff] 
-            bg-clip-text text-transparent
+          text-5xl text-shadow-lg text-shadow-b-black text-wrap font-extrabold text-center libertinus mb-12
+    bg-gradient-to-r from-[#ffffff] via via-[#d015ff] to-white 
+    bg-clip-text text-transparent
           "
         >
           Professional Skill Set
@@ -257,7 +257,7 @@ const Home = () => {
         <div className="space-y-12">
           {skillsData.map((section, index) => (
             <div key={index}>
-              <h3 className="  text-white dark:text-white elsie font-semibold mb-6">
+              <h3 className="  text-white text-2xl tracking-wider dark:text-white elsie font-semibold mb-6">
                 {section.title}
               </h3>
 
@@ -421,9 +421,9 @@ const Home = () => {
 
       {/* Small devices: Sidebar + intro in flex container, rest content outside */}
       <div className="md:hidden p-5 pt-40 space-y-6">
-        <div className="flex flex-col-reverse gap-5 items-center">
+        <div className="flex flex-col-reverse gap-5  items-center">
           {/* Sidebar + intro */}
-          <div className="bg-black shadow-2xl patterned-bg shadow-black text-center px-3 py-6 rounded-lg flex-shrink-0 ">
+          <div className="bg-black mt-10 shadow-2xl patterned-bg  shadow-black text-center px-3 py-6 rounded-lg flex-shrink-0 ">
             <div className="glass-container space-y-2 border-2 px-3 py-5 rounded-2xl">
               <img
                 className="profile-img mx-auto rounded-2xl "
@@ -484,8 +484,8 @@ const Home = () => {
               digital solutions that deliver seamless user experiences across
               devices.
             </p>
-            <div className="flex gap-5 items-center justify-center mt-3">
-             <a href="/FAHMIDA NIMRA Resume-MERN Stack Developer-fahmidanimra@gmail.com.pdf" download="Fahamida-Nimra-Resume.pdf">
+            <div className="flex gap-5  items-center justify-center mt-6">
+             <a href="/FAHMIDA NIMRA Resume-MERN Stack Developer-fahmidanimra@gmail.com.pdf" download="FAHMIDA NIMRA Resume-MERN Stack Developer-fahmidanimra@gmail.pdf">
                  <button className="btnResume">Resume</button>
             </a>
               <button onClick={scrollToContact1} className="btnResume text-sm px-5 py-2">Contact Me</button>
@@ -548,8 +548,8 @@ const Home = () => {
             <section id='skills1' ref={skillsRef} className=" md:hidden ">
       <div className="max-w-5xl mx-auto">
        <h2
-  className="text-4xl text-wrap font-extrabold text-center libertinus mb-12
-    bg-gradient-to-r from-white  to-[#e168ff] 
+  className="text-5xl text-shadow-lg text-shadow-b-black text-wrap font-extrabold text-center libertinus mb-12
+    bg-gradient-to-r from-[#ffffff] via via-[#cc00ff] to-white 
     bg-clip-text text-transparent"
 >
   Professional Skill Set

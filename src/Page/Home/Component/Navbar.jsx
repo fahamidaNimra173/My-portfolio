@@ -12,18 +12,18 @@ const Navbar = () => {
     }
     setDropdownOpen(false); // Close dropdown after clicking
   };
-  const navigate=useNavigate()
+  const navigate = useNavigate()
 
   return (
     <div className="text-[20px] alice fixed z-100 w-full mx-auto md:mr-15 text-white px-1 md:px-5 md:pt-5">
-      <nav className="flex lg:mr-5 items-center justify-between rounded-3xl bg-gradient-to-r from-black via-black to-purple-500 shadow-2xl shadow-black px-1 md:px-5 py-3">
+      <nav className="flex lg:mr-5 items-center justify-between rounded-3xl bg-gradient-to-r from-black via-black to-purple-500 shadow-2xl shadow-black px-1 md:px-5  lg:py-0">
 
         {/* Left: Logo */}
         <div className="flex mx-5 items-center gap-1 justify-center md:space-x-4">
           <div>
             <img
-              className="h-12"
-              src="https://i.ibb.co.com/7dhVDQfK/White-Typography-Initial-CR-Logo-2.png"
+              className="w-18 md:h-20 lg:w-25"
+              src="https://i.ibb.co.com/8DwYkFCb/White-Typography-Initial-CR-Logo-3.png"
               alt="Logo"
             />
           </div>
@@ -44,7 +44,9 @@ const Navbar = () => {
 
           {/* Resume button desktop only */}
           <div className='hidden md:block'>
-            <button className="btnResume">Resume</button>
+            <a href="/FAHMIDA NIMRA Resume-MERN Stack Developer-fahmidanimra@gmail.com.pdf" download="FAHMIDA NIMRA Resume-MERN Stack Developer-fahmidanimra@gmail.pdf">
+              <button className="btnResume">Resume</button>
+            </a>
           </div>
 
           {/* Mobile hamburger dropdown */}
@@ -114,12 +116,9 @@ const Navbar = () => {
 
                 <li><hr className="my-1 border-purple-600" /></li>
                 <li>
-                  <button
-                    className="btnResume w-full"
-                    onClick={() => setDropdownOpen(false)} // close dropdown
-                  >
-                    Resume
-                  </button>
+                  <a href="/FAHMIDA NIMRA Resume-MERN Stack Developer-fahmidanimra@gmail.com.pdf" download="FAHMIDA NIMRA Resume-MERN Stack Developer-fahmidanimra@gmail.pdf">
+                    <button className="btnResume">Resume</button>
+                  </a>
                 </li>
               </ul>
             )}
