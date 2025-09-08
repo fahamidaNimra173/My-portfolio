@@ -189,14 +189,14 @@ const Home = () => {
         <div
           className="
             flex-1
-            pl-3 pt-40 md:pt-60 space-y-11 p-5 lg:pr-15
+            pl-3 pt-40 md:pt-60 space-y-11 
             max-h-screen overflow-y-auto
           "
         >
-          <h1 className="text-4xl font-bold text-[#d633ff] kaushan md:text-left text-center">
+          <h1 className="text-4xl font-bold p-5 lg:pr-15 text-[#d633ff] kaushan md:text-left text-center">
             Painting the Web with Code and Color
           </h1>
-          <p className="text-[20px] text-white dark:text-white font-medium alice">
+          <p className="text-[20px] text-white p-5 lg:pr-15 dark:text-white font-medium alice">
             Combining artistic passion with technical skill, I create dynamic,
             user-friendly websites that bring ideas to life with clarity and
             purpose. Leveraging modern technologies like React, Tailwind CSS,
@@ -204,14 +204,14 @@ const Home = () => {
             digital solutions that deliver seamless user experiences across
             devices.
           </p>
-          <div className="flex gap-10 justify-center items-center">
+          <div className="flex gap-10 p-5 lg:pr-15 justify-center items-center">
             <a href="/FAHMIDA NIMRA Resume-MERN Stack Developer-fahmidanimra@gmail.com.pdf" download="FAHMIDA NIMRA Resume-MERN Stack Developer-fahmidanimra@gmail.pdf">
                  <button className="btnResume">Resume</button>
             </a>
             <button onClick={scrollToContact} className="btnResume">Contact Me</button>
           </div>
           <section id='about'>
-                 <div className=' md:my-20 lg:my-30 space-y-5'>
+                 <div className=' p-5 lg:pr-15 md:my-20 lg:my-30 space-y-5'>
             <h1 className="text-white dark:text-white text-4xl elsie text-center">About <span className='text-[#e787ff]'>Me</span> </h1>
         <p className="text-white dark:text-white alice text-[20px]">
             I’m a MERN stack developer fueled by a passion for vibrant design and
@@ -242,7 +242,7 @@ const Home = () => {
          
 
 
-    <section id='skills' className="py-16">
+    <section id='skills' className="py-16 p-5 lg:pr-15">
       <div className="max-w-5xl mx-auto">
         <h2
           className="
@@ -278,7 +278,7 @@ const Home = () => {
         </div>
       </div>
     </section>
-      <div className='relative  hidden md:block z-10 my-20 noise-overlay-lg-edu'>
+      <div className='relative p-5 lg:pr-15 hidden md:block z-10 my-20 noise-overlay-lg-edu'>
                       <section id='education' className="lg:py-30 lg:flex lg:items-center lg:justify-between shadow-2xl shadow-white  p-6 w-full rounded-lg bg-purple-600 text-white dark:text-white opacity-65">
                         <div>
                              <h2 className="text-3xl lg:text-5xl font-bold mb-8 text-white dark:text-white text-center">Educational <span className='lg:ml-20 text-black'>Milestone</span> </h2>
@@ -306,114 +306,139 @@ const Home = () => {
 
 
     </div>
-    <section id='project'>
+    <section id='project' className='p-5 lg:pr-15'>
       <ProjectCard></ProjectCard>
     </section>
-       <section id='connect-me'
-      
-      className="md:hidden lg:block pt-20 mb-10 text-white py-16 px-6 md:px-12 overflow-hidden contact-bg"
-    >
-      {/* Floating Points */}
-      <div className="points_wrapper">
-        {[...Array(10)].map((_, i) => (
-          <i className="point" key={i}></i>
-        ))}
-      </div>
 
-      <div className=" mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10">
-        {/* LEFT SIDE */}
-        <div>
-          <h1 className="text-4xl font-bold mb-4">Get in Touch</h1>
-          <p className="text-lg mb-8 text-gray-200">
-            Open to any adventure that involves learning and making cool stuff!
-          </p>
 
-          <div className="space-y-4">
-            <p className="text-lg">
-              <span className="font-semibold">Email:</span>{" "}
-              <a href="mailto:fahmidanimra@gmail.com" className="text-purple-200 hover:underline">
-                fahmidanimra@gmail.com
-              </a>
-            </p>
+<section
+  id="connect-me"
+  className="md:hidden lg:block h-[700px] mb-1  text-white relative overflow-hidden"
+  style={{
+    backgroundImage: "url('https://i.ibb.co.com/23QX7Wxd/download-11-removebg-preview.png')",
+  // stretches to fit full width & height without crop
+  backgroundSize: "auto 100%",
+    backgroundRepeat:"repeat-x",
+    backgroundPosition: "contain",
+  }}
+>
+  {/* Floating Points */}
+  <div className="points_wrapper">
+    {[...Array(10)].map((_, i) => (
+      <i className="point" key={i}></i>
+    ))}
+  </div>
 
-            <p className="text-lg flex items-center gap-2">
-              <FaLinkedin className="text-blue-400" size={22} />
-              <a
-                href="https://www.linkedin.com/in/fahmida-nimra/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:underline"
-              >
-                https://www.linkedin.com/in/fahmida-nimra/
-              </a>
-            </p>
+    <div className="relative  mt-35 grid md:grid-cols-2 gap-12 items-center z-10 px-8 py-10 w-full h-full">
+    {/* LEFT DECOR IMAGE */}
+    <img
+      src="https://i.ibb.co.com/m5NKRCYr/Tokyo-Ghoul-Kaneki-Ken-1000-7.jpg"
+      alt="Left decoration"
+      className="absolute left-0 top-1/2 -translate-y-1/2 w-56 opacity-80 pointer-events-none"
+    />
 
-            <p className="text-lg flex items-center gap-2">
-              <FaGithub className="text-gray-300" size={22} />
-              <a
-                href="https://www.linkedin.com/in/fahmida-nimra/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:underline"
-              >
-                https://github.com/fahamidaNimra173
-              </a>
-            </p>
+    {/* RIGHT DECOR IMAGE */}
+    <img
+      src="https://i.ibb.co.com/zWs7pXCT/right.jpg"
+      alt="Right decoration"
+      className="absolute right-0 top-1/2 -translate-y-1/2 w-56 opacity-80 pointer-events-none"
+    />
 
-            <p className="text-lg flex items-center gap-2">
-              <FaWhatsapp className="text-green-400" size={22} />
-              <a
-                href="https://wa.me/8801568029731"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:underline"
-              >
-                +880 1568 029 731
-              </a>
-            </p>
-          </div>
+    {/* LEFT SIDE CONTENT */}
+    <div className="relative text-center bg-black/40 py-20 z-20">
+      <h1 className="text-4xl font-bold libertinus mb-10 bg-gradient-to-r from-[#000000] via via-[#d015ff] to-whit">Get in Touch</h1>
+      <p className="text-lg mb-8 alice text-gray-200">
+        Open to any adventure that involves learning and making cool stuff!
+      </p>
+
+<div className="flex flex-row items-center justify-center gap-4">
+  {/* <a
+    href="mailto:fahmidanimra@gmail.com"
+    className="text-purple-200 hover:scale-110 transition-transform"
+  >
+    <MdEmail size={28} />
+  </a> */}
+
+  <a
+    href="https://www.linkedin.com/in/fahmida-nimra/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-400 hover:scale-110 transition-transform"
+  >
+    <FaLinkedin size={48} />
+  </a>
+
+  <a
+    href="https://github.com/fahamidaNimra173"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-gray-300 hover:scale-110 transition-transform"
+  >
+    <FaGithub size={48} />
+  </a>
+
+  <a
+    href="https://wa.me/8801568029731"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-green-400 hover:scale-110 transition-transform"
+  >
+    <FaWhatsapp size={48} />
+  </a>
+</div>
+
+    </div>
+
+    {/* RIGHT SIDE - CONTACT FORM */}
+    <div className="p-6 mb-10 rounded-lg relative z-20 bg-black/40">
+      <form ref={form} onSubmit={sendEmail}>
+        <div className="mb-4">
+          <label className="block mb-2">Name</label>
+          <input
+            name="user-name"
+            type="text"
+            className="w-full p-3 rounded border border-gray-400 text-white outline-none focus:ring-2 focus:ring-purple-400"
+            placeholder="Your Name"
+          />
         </div>
-
-        {/* RIGHT SIDE - CONTACT FORM */}
-        <div className=" p-6 rounded-lg shadow-2xl">
-          <form ref={form} onSubmit={sendEmail}>
-            <div className="mb-4">
-              <label className="block mb-2">Name</label>
-              <input
-                 name="user-name"
-                type="text"
-                className="w-full p-3 rounded bg-gray-800 text-white outline-none focus:ring-2 focus:ring-purple-400"
-                placeholder="Your Name"
-              />
-            </div>
-            <div className="mb-4">
-              <label className="block mb-2">Email</label>
-              <input
-                type="email"
-                 name="user-email"
-                className="w-full p-3 rounded bg-gray-800 text-white outline-none focus:ring-2 focus:ring-purple-400"
-                placeholder="Your Email"
-              />
-            </div>
-            <div className="mb-4">
-              <label className="block mb-2">Message</label>
-              <textarea
-               name="message"
-                rows="4"
-                className="w-full p-3 rounded bg-gray-800 text-white outline-none focus:ring-2 focus:ring-purple-400"
-                placeholder="Your Message"
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              className="bg-purple-500 hover:bg-purple-600 transition-all w-full p-3 rounded font-semibold"
-            >
-              Send Message
-            </button>
-          </form>
+        <div className="mb-4">
+          <label className="block mb-2">Email</label>
+          <input
+            type="email"
+            name="user-email"
+            className="w-full p-3 rounded border border-gray-400 text-white outline-none focus:ring-2 focus:ring-purple-400"
+            placeholder="Your Email"
+          />
         </div>
-      </div>
-    </section>
+        <div className="mb-4">
+          <label className="block mb-2">Message</label>
+          <textarea
+            name="message"
+            rows="4"
+            className="w-full p-3 rounded border border-gray-400 text-white outline-none focus:ring-2 focus:ring-purple-400"
+            placeholder="Your Message"
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          className="bg-purple-500 hover:bg-purple-600 transition-all w-full p-3 rounded font-semibold"
+        >
+          Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+<section>
+  <div className='bg-black text-center py-5 '>
+<h1 className="libertinus text-lg text-white bg-white/13 backdrop-blur-sm px-6 py-3 -ml-8 pr-8 shadow-lg border-b  border-white/20 text-center w-full overflow-hidden">
+  © 2025 Fahmida Nimra | Curiosity Drives Creation
+</h1>
+
+
+  </div>
+</section>
+
 
         </div>
         
@@ -622,104 +647,121 @@ const Home = () => {
         ))}
       </div>
 
-      <div className="  flex flex-col gap-12 items-center relative z-10">
-        {/* LEFT SIDE */}
-<div className="px-4 sm:pl-4 md:px-0 text-wrap max-w-full">
-  <h1 className="text-4xl font-bold mb-4">Get in Touch</h1>
-  <p className="text-lg mb-8 text-gray-200 max-w-full">
-    Open to any adventure that involves learning and making cool stuff!
-  </p>
+<div
+  className="relative flex flex-col md:flex-row gap-12 items-center z-10 bg-cover bg-center bg-no-repeat p-8"
+  style={{ backgroundImage: "url('https://i.ibb.co.com/23QX7Wxd/download-11-removebg-preview.png')" }}
+>
+  {/* LEFT DECOR IMAGE */}
+  <img
+    src="https://i.ibb.co.com/m5NKRCYr/Tokyo-Ghoul-Kaneki-Ken-1000-7.jpg"
+    alt="Left decoration"
+    className="absolute left-0 top-1/2 -translate-y-1/2 w-56 opacity-80 pointer-events-none"
+  />
 
-  <div className="space-y-4 max-w-full">
-    <p className="text-lg flex flex-wrap items-center gap-2">
-      <span className="font-semibold">Email:</span>{" "}
-      <a
-        href="mailto:fahmidanimra@gmail.com"
-        className="text-purple-200 text-wrap  hover:underline break-words"
-      >
-        fahmidanimra@gmail.com
-      </a>
+  {/* RIGHT DECOR IMAGE */}
+  <img
+    src="https://i.ibb.co.com/zWs7pXCT/right.jpg"
+    alt="Right decoration"
+    className="absolute right-0 top-1/2 -translate-y-1/2 w-56 opacity-80 pointer-events-none"
+  />
+
+  {/* LEFT CONTENT */}
+  <div className="px-4 sm:pl-4 md:px-0 text-wrap max-w-full relative z-20">
+    <h1 className="text-4xl font-bold mb-4">Get in Touch</h1>
+    <p className="text-lg mb-8 text-gray-200 max-w-full">
+      Open to any adventure that involves learning and making cool stuff!
     </p>
 
-    <p className="text-lg flex pr-5 flex-wrap items-center gap-2">
-      <FaLinkedin className="text-blue-400" size={22} />
-      <a
-        href="https://www.linkedin.com/in/fahmida-nimra/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="hover:underline text-wrap pr-2 break-words"
-      >
-        https://www.linkedin.com/in/fahmida-nimra/
-      </a>
-    </p>
+    <div className="space-y-4 max-w-full">
+      <p className="text-lg flex flex-wrap items-center gap-2">
+        <span className="font-semibold">Email:</span>
+        <a
+          href="mailto:fahmidanimra@gmail.com"
+          className="text-purple-200 hover:underline break-words"
+        >
+          fahmidanimra@gmail.com
+        </a>
+      </p>
 
-    <p className="text-lg flex flex-wrap items-center gap-2">
-      <FaGithub className="text-gray-300" size={22} />
-      <a
-        href="https://github.com/fahamidaNimra173"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="hover:underline break-words"
-      >
-        https://github.com/fahamidaNimra173
-      </a>
-    </p>
+      <p className="text-lg flex flex-wrap items-center gap-2">
+        <FaLinkedin className="text-blue-400" size={22} />
+        <a
+          href="https://www.linkedin.com/in/fahmida-nimra/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:underline break-words"
+        >
+          https://www.linkedin.com/in/fahmida-nimra/
+        </a>
+      </p>
 
-    <p className="text-lg flex flex-wrap items-center gap-2">
-      <FaWhatsapp className="text-green-400" size={22} />
-      <a
-        href="https://wa.me/8801568029731"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="hover:underline break-words"
+      <p className="text-lg flex flex-wrap items-center gap-2">
+        <FaGithub className="text-gray-300" size={22} />
+        <a
+          href="https://github.com/fahamidaNimra173"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:underline break-words"
+        >
+          https://github.com/fahamidaNimra173
+        </a>
+      </p>
+
+      <p className="text-lg flex flex-wrap items-center gap-2">
+        <FaWhatsapp className="text-green-400" size={22} />
+        <a
+          href="https://wa.me/8801568029731"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:underline break-words"
+        >
+          +880 1568 029 731
+        </a>
+      </p>
+    </div>
+  </div>
+
+  {/* RIGHT SIDE FORM */}
+  <div className="p-6 rounded-lg w-full h-full relative z-20 bg-transparent">
+    <form ref={form} onSubmit={sendEmail} className="flex flex-col h-full">
+      <div className="mb-4">
+        <label className="block mb-2">Name</label>
+        <input
+          name="user-name"
+          type="text"
+          className="w-full p-3 rounded bg-white/10 text-white outline-none focus:ring-2 focus:ring-purple-400"
+          placeholder="Your Name"
+        />
+      </div>
+      <div className="mb-4">
+        <label className="block mb-2">Email</label>
+        <input
+          type="email"
+          name="user-email"
+          className="w-full p-3 rounded bg-white/10 text-white outline-none focus:ring-2 focus:ring-purple-400"
+          placeholder="Your Email"
+        />
+      </div>
+      <div className="mb-4">
+        <label className="block mb-2">Message</label>
+        <textarea
+          name="message"
+          rows="4"
+          cols={10}
+          className="w-full p-3 rounded bg-white/10 text-white outline-none focus:ring-2 focus:ring-purple-400"
+          placeholder="Your Message"
+        ></textarea>
+      </div>
+      <button
+        type="submit"
+        className="bg-purple-500 hover:bg-purple-600 transition-all w-full p-3 rounded font-semibold"
       >
-        +880 1568 029 731
-      </a>
-    </p>
+        Send Message
+      </button>
+    </form>
   </div>
 </div>
 
-
-        {/* RIGHT SIDE - CONTACT FORM */}
-        <div className=" p-6 rounded-lg shadow-2xl  w-full h-full">
-          <form ref={form} onSubmit={sendEmail}  className="flex flex-col h-full">
-            <div className="mb-4">
-              <label className="block mb-2">Name</label>
-              <input
-               name="user-name"
-                type="text"
-                className="w-full p-3 rounded bg-gray-800 text-white outline-none focus:ring-2 focus:ring-purple-400"
-                placeholder="Your Name"
-              />
-            </div>
-            <div className="mb-4">
-              <label className="block mb-2">Email</label>
-              <input
-                type="email"
-                 name="user-email"
-                className="w-full p-3 rounded bg-gray-800 text-white outline-none focus:ring-2 focus:ring-purple-400"
-                placeholder="Your Email"
-              />
-            </div>
-            <div className="mb-4">
-              <label className="block mb-2">Message</label>
-              <textarea
-              name="message"
-                rows="4"
-                cols={10}
-                className="w-full p-3 rounded bg-gray-800 text-white outline-none focus:ring-2 focus:ring-purple-400"
-                placeholder="Your Message"
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              className="bg-purple-500 hover:bg-purple-600 transition-all w-full p-3 rounded font-semibold"
-            >
-              Send Message
-            </button>
-          </form>
-        </div>
-      </div>
     </section>
 
       </div>
