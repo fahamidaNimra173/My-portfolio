@@ -2,6 +2,9 @@
 //eikhane shob souble double korci ekta large device arekta small device
 // tai section id o duita mobile device er jonne just id er side a 1 use korci
 
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+import Lottie from "lottie-react";
 
 import React, { useRef } from 'react';
 import { FaFacebookF, FaLinkedinIn, FaGithub,FaLinkedin, FaWhatsapp } from "react-icons/fa";
@@ -31,11 +34,17 @@ import {
   SiCanva,
   SiFramer,
 } from "react-icons/si";
+import { RiNextjsFill } from "react-icons/ri";
 import emailjs from "emailjs-com";
 import ProjectCard from './Component/ProjectCard';
 
 
 const Home = () => {
+
+
+
+
+
    const form = useRef();
   const scrollToContact = () => {
     const contactSection = document.getElementById("connect-me");
@@ -51,28 +60,53 @@ const Home = () => {
     }
   };
   
-  const sendEmail = (e) => {
-    e.preventDefault();
+const sendEmail = (e) => {
+  e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_oe3q0i5",     // e.g. 'service_xxx123'
-        "template_0icw7jo",    // e.g. 'template_abc456'
-        form.current,
-        "GMiAsjYyl-sKW6nd7"      // e.g. 'user_7xyz890'
-      )
-      .then(
-        (result) => {
-          console.log("Email sent successfully!", result.text);
-          alert("Message sent!");
-          e.target.reset();
-        },
-        (error) => {
-          console.log("Failed to send email:", error.text);
-          alert("Failed to send message, try again later.");
-        }
-      );
-  };
+  emailjs
+    .sendForm(
+      "service_oe3q0i5",
+      "template_0icw7jo",
+      form.current,
+      "GMiAsjYyl-sKW6nd7"
+    )
+    .then(
+      (result) => {
+        console.log("Email sent successfully!", result.text);
+        e.target.reset();
+
+        toast.success(
+          <div className="flex items-start gap-1 px-1">
+            <Lottie
+              path="/Flying Bee.json"
+              loop={false}
+              style={{ width: 50, height: 50 }}
+            />
+            <span className="text-purple-500 font-semibold">
+              Thank you for your valuable time!
+            </span>
+          </div>,
+          {
+            position: "top-center",
+            autoClose: 4000,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: false,
+            icon:false,
+            theme: "dark",
+          }
+        );
+      },
+      (error) => {
+        console.error("Failed to send email:", error.text);
+        toast.error("Failed to send message, try again later.", {
+          position: "top-center",
+        });
+      }
+    );
+};
+
 
 
 
@@ -86,6 +120,7 @@ const Home = () => {
       { name: "JavaScript ", icon: <SiJavascript className="text-yellow-400" size={40} /> },
       { name: "DaisyUI", icon: <SiDaisyui className="text-pink-400" size={40} /> },
       { name: "React", icon: <FaReact className="text-cyan-400" size={40} /> },
+      { name: "Next Js.", icon: <RiNextjsFill className="text-white" size={40} /> },
       { name: "Vite", icon: <SiVite className="text-purple-400" size={40} /> },
       { name: "React Router", icon: <SiReactrouter className="text-red-500" size={40} /> },
       { name: "Firebase", icon: <SiFirebase className="text-yellow-500" size={40} /> },
@@ -408,6 +443,7 @@ const Home = () => {
             name="user-email"
             className="w-full p-3 rounded border border-gray-400 text-white outline-none focus:ring-2 focus:ring-purple-400"
             placeholder="Your Email"
+            required
           />
         </div>
         <div className="mb-4">
@@ -417,6 +453,7 @@ const Home = () => {
             rows="4"
             className="w-full p-3 rounded border border-gray-400 text-white outline-none focus:ring-2 focus:ring-purple-400"
             placeholder="Your Message"
+            required
           ></textarea>
         </div>
         <button
@@ -426,6 +463,7 @@ const Home = () => {
           Send Message
         </button>
       </form>
+      <ToastContainer/>
     </div>
   </div>
 </section>
@@ -860,6 +898,7 @@ const Home = () => {
             name="user-email"
             className="w-full p-3 rounded border border-gray-400 text-white outline-none focus:ring-2 focus:ring-purple-400"
             placeholder="Your Email"
+            required
           />
         </div>
         <div className="mb-4">
@@ -869,6 +908,7 @@ const Home = () => {
             rows="4"
             className="w-full p-3 rounded border border-gray-400 text-white outline-none focus:ring-2 focus:ring-purple-400"
             placeholder="Your Message"
+            required
           ></textarea>
         </div>
         <button
@@ -880,6 +920,7 @@ const Home = () => {
       </form>
     </div>
   </div>
+    <ToastContainer />
 </section>
 <section>
   <div className='bg-black text-center py-5 '>
