@@ -36,7 +36,7 @@ import {
   SiTypescript
 } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
-import { PiSunHorizonFill } from "react-icons/pi";
+import { PiStudentFill, PiSunHorizonFill } from "react-icons/pi";
 import { IoMdTime } from "react-icons/io";
 import emailjs from "emailjs-com";
 import ProjectCard from './Component/ProjectCard';
@@ -318,17 +318,17 @@ const sendEmail = (e) => {
         </div>
       </div>
     </section>
-      <div className='relative p-5 lg:pr-15 hidden md:block z-10 my-20 noise-overlay-lg-edu'>
-                      <section id='education' className="lg:py-30 lg:flex lg:items-center lg:justify-between shadow-2xl shadow-white  p-6 w-full rounded-lg bg-purple-600 text-white dark:text-white opacity-65">
+      <div className='relative p-5 lg:pr-15 hidden md:block z-10 my-20 '>
+      {/* <section id='education' className="lg:py-30 lg:flex lg:items-center lg:justify-between    p-6 w-full rounded-lg text-white dark:text-white ">
                         <div>
                              <h2 className="text-3xl lg:text-5xl font-bold mb-8 text-white dark:text-white text-center">Educational <span className='lg:ml-20 text-black'>Milestone</span> </h2>
                         </div>
      
 
       <div className="relative border-l-3  pl-6">
-        {/* Timeline item */}
+        
         <div className="mb-8 ml-4 py-10">
-          {/* Circle */}
+        
           <div className="absolute -ml-14 ">
 <button class="mouse">
   <div class="scroll"></div>
@@ -341,12 +341,61 @@ const sendEmail = (e) => {
           <p className="text-white font-medium dark:text-white">Graduated: 2024</p>
         </div>
       </div>
-    </section>
+    </section> */}
+
+
+<div class="card e-card playing">
+  <div class="content">
+  
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave1"></div>
+    <div class="wave1"></div>
+    <div class="wave1"></div>
+
+    
+    <div class="back">
+      <div class="back-content">
+        <section
+          id="education"
+          class="p-6 w-full rounded-lg text-purple-100 flex flex-row gap-5 items-center justify-center"
+        >
+          <h2 class="text-3xl lg:text-5xl font-bold mb-8 text-center">
+            Educational<br></br>
+            <span class="lg:ml-4 text-purple-500 elsie">Milestone</span>
+          </h2>
+
+          <div class="relative 
+                        shadow-[0_0_25px_6px_rgba(168,85,247,0.7),inset_0_0_15px_20px_rgba(168,85,247,0.8)]
+                        rounded-b-xl p-10 border-1 border-purple-600 rounded-3xl">
+            <div class=" flex flex-col items-center gap-7 py-15">
+             <PiStudentFill className="text-purple-400 h-16 w-25"></PiStudentFill>
+
+              <div className="flex flex-col items-center gap-3">
+                <h3 class="text-xl font-semibold">
+                BSc in Computer Science & Engineering (CSE)
+              </h3>
+              <p class="font-medium">
+                Port City International University
+              </p>
+              <p class="font-medium">CGPA: 3.48</p>
+              <p class="font-medium">Graduated: 2024</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 
 
     </div>
-    <section id='project' className='p-5 lg:pr-15'>
+    <section id='project' className='p-5 '>
       <ProjectCard></ProjectCard>
     </section>
 
@@ -653,15 +702,18 @@ const sendEmail = (e) => {
 
     </section>
     {/* eduction section */}
-    <section id='education1'>
+ 
+ 
+ 
+    {/* <section id='education1'>
          <div className='z-100 p-5 md:hidden my-20 '>
-                      <section className="max-w-xl shadow-2xl shadow-white mx-auto p-6  rounded-lg bg-purple-600 text-white dark:text-white ">
+    <section className="max-w-xl shadow-2xl  mx-auto p-6  rounded-lg  text-white dark:text-white ">
       <h2 className="text-3xl font-bold mb-8 text-white dark:text-white text-center">Educational Milestones</h2>
 
       <div className="relative border-l-3 border-purple-100 pl-6">
-        {/* Timeline item */}
+       
         <div className="mb-8 ml-4">
-          {/* Circle */}
+  
           <div className="absolute -left-3 top-2 w-6 h-6 bg-purple-600 rounded-full border-4 border-white"></div>
 
           <h3 className="text-xl font-semibold">BSc in Computer Science & Engineering (CSE)</h3>
@@ -671,140 +723,75 @@ const sendEmail = (e) => {
         </div>
       </div>
     </section>
+    
     </div>
-            {/* projects section */}
-    <section id='project1' >
-      <ProjectCard></ProjectCard>
-    </section>
 
-    </section>
- 
-         {/* <section
-      id='connect-me1'
-      className="md:block mb-10 lg:hidden pt-20 text-white py-16 px-3 md:px-12 overflow-hidden contact-bg"
-    >
 
-      <div className="points_wrapper">
-        {[...Array(10)].map((_, i) => (
-          <i className="point" key={i}></i>
-        ))}
+
+
+    
+
+
+    </section> */}
+
+
+<div class="card e-card my-55 playing">
+  <div class="content">
+  
+
+    <div class="wave1"></div>
+    <div class="wave1"></div>
+    <div class="wave1"></div>
+
+    
+    <div class="back">
+      <div class="back-content">
+        <section
+          id="education1"
+          class="p-2 w-full rounded-lg text-purple-100 flex flex-col gap-5 items-center justify-center"
+        >
+          <h2 class="text-3xl lg:text-5xl font-bold mb-2 pt-8 text-center">
+            Educational<br></br>
+            <span class="lg:ml-4 text-purple-500 elsie">Milestone</span>
+          </h2>
+
+          <div class="relative 
+                        shadow-[0_0_25px_6px_rgba(168,85,247,0.7),inset_0_0_15px_20px_rgba(168,85,247,0.8)]
+                        rounded-b-xl p-10 border-1 border-purple-600 rounded-3xl">
+            <div class=" flex flex-col items-center gap-7 py-12">
+             <PiStudentFill className="text-purple-400 h-16 w-25"></PiStudentFill>
+
+              <div className="flex flex-col items-center justify-center text-center gap-3">
+                <h3 class="text-xl font-semibold">
+                BSc in Computer Science & Engineering (CSE)
+              </h3>
+              <p class="font-medium">
+                Port City International University
+              </p>
+              <p class="font-medium">CGPA: 3.48</p>
+              <p class="font-medium">Graduated: 2024</p>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-
-<div
-  className="relative flex flex-col md:flex-row gap-12 items-center z-10 bg-cover bg-center bg-no-repeat p-8"
-  style={{ backgroundImage: "url('https://i.ibb.co.com/23QX7Wxd/download-11-removebg-preview.png')" }}
->
-
-  <img
-    src="https://i.ibb.co.com/m5NKRCYr/Tokyo-Ghoul-Kaneki-Ken-1000-7.jpg"
-    alt="Left decoration"
-    className="absolute left-0 top-1/2 -translate-y-1/2 w-56 opacity-80 pointer-events-none"
-  />
-
-
-  <img
-    src="https://i.ibb.co.com/zWs7pXCT/right.jpg"
-    alt="Right decoration"
-    className="absolute right-0 top-1/2 -translate-y-1/2 w-56 opacity-80 pointer-events-none"
-  />
-
-
-  <div className="px-4 sm:pl-4 md:px-0 text-wrap max-w-full relative z-20">
-    <h1 className="text-4xl font-bold mb-4">Get in Touch</h1>
-    <p className="text-lg mb-8 text-gray-200 max-w-full">
-     Open to crafting interfaces that feel like art and function like magic!
-    </p>
-
-    <div className="space-y-4 max-w-full">
-      <p className="text-lg flex flex-wrap items-center gap-2">
-        <span className="font-semibold">Email:</span>
-        <a
-          href="mailto:fahmidanimra@gmail.com"
-          className="text-purple-200 hover:underline break-words"
-        >
-          fahmidanimra@gmail.com
-        </a>
-      </p>
-
-      <p className="text-lg flex flex-wrap items-center gap-2">
-        <FaLinkedin className="text-blue-400" size={22} />
-        <a
-          href="https://www.linkedin.com/in/fahmida-nimra/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:underline break-words"
-        >
-          https://www.linkedin.com/in/fahmida-nimra/
-        </a>
-      </p>
-
-      <p className="text-lg flex flex-wrap items-center gap-2">
-        <FaGithub className="text-gray-300" size={22} />
-        <a
-          href="https://github.com/fahamidaNimra173"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:underline break-words"
-        >
-          https://github.com/fahamidaNimra173
-        </a>
-      </p>
-
-      <p className="text-lg flex flex-wrap items-center gap-2">
-        <FaWhatsapp className="text-green-400" size={22} />
-        <a
-          href="https://wa.me/8801568029731"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:underline break-words"
-        >
-          +880 1568 029 731
-        </a>
-      </p>
     </div>
-  </div>
-
-  <div className="p-6 rounded-lg w-full h-full relative z-20 bg-transparent">
-    <form ref={form} onSubmit={sendEmail} className="flex flex-col h-full">
-      <div className="mb-4">
-        <label className="block mb-2">Name</label>
-        <input
-          name="user-name"
-          type="text"
-          className="w-full p-3 rounded bg-white/10 text-white outline-none focus:ring-2 focus:ring-purple-400"
-          placeholder="Your Name"
-        />
-      </div>
-      <div className="mb-4">
-        <label className="block mb-2">Email</label>
-        <input
-          type="email"
-          name="user-email"
-          className="w-full p-3 rounded bg-white/10 text-white outline-none focus:ring-2 focus:ring-purple-400"
-          placeholder="Your Email"
-        />
-      </div>
-      <div className="mb-4">
-        <label className="block mb-2">Message</label>
-        <textarea
-          name="message"
-          rows="4"
-          cols={10}
-          className="w-full p-3 rounded bg-white/10 text-white outline-none focus:ring-2 focus:ring-purple-400"
-          placeholder="Your Message"
-        ></textarea>
-      </div>
-      <button
-        type="submit"
-        className="bg-purple-500 hover:bg-purple-600 transition-all w-full p-3 rounded font-semibold"
-      >
-        Send Message
-      </button>
-    </form>
   </div>
 </div>
 
-    </section> */}
+
+
+
+
+
+
+
+                {/* projects section */}
+    <section id='project1' >
+      <ProjectCard></ProjectCard>
+    </section>
+ 
+        
     
 <section
   id="connect-me1"

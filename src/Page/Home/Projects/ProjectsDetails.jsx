@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router";
 import { projectsData } from "../../../assets/projectsData";
 import { motion } from "framer-motion";
+import { FaGithub } from "react-icons/fa";
 
 const ProjectDetailsPage = () => {
     const { id } = useParams();
@@ -80,7 +81,7 @@ const ProjectDetailsPage = () => {
                     ))}
                 </div>
             </motion.div>
-     
+
             {/* Challenges */}
             {project.challenges && (
                 <motion.div
@@ -106,7 +107,7 @@ const ProjectDetailsPage = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
                 >
-                    <h2 className="text-2xl font-semibold mb-4 text-purple-400">Future Improvements</h2>
+                    <h2 className="text-2xl font-semibold mb-4 text-purple-400 ">Future Improvements</h2>
                     <ul className="list-disc pl-5 space-y-2">
                         {project.futureImprovements.map((improvement, idx) => (
                             <li key={idx}>{improvement}</li>
@@ -121,17 +122,70 @@ const ProjectDetailsPage = () => {
                     href={project.liveLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2 bg-purple-500 hover:bg-purple-600 rounded text-white"
+                    
                 >
-                    Live Site
+
+                    <button type="buttonfold" class="buttonfold">
+                        <span class="fold"></span>
+
+                        <div class="points_wrapper">
+                            <i class="point"></i>
+                            <i class="point"></i>
+                            <i class="point"></i>
+                            <i class="point"></i>
+                            <i class="point"></i>
+                            <i class="point"></i>
+                            <i class="point"></i>
+                            <i class="point"></i>
+                            <i class="point"></i>
+                            <i class="point"></i>
+                        </div>
+
+                        <span class="inner"
+                        ><svg
+                            class="icon"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2.5"
+                        >
+                                <polyline
+                                    points="13.18 1.37 13.18 9.64 21.45 9.64 10.82 22.63 10.82 14.36 2.55 14.36 13.18 1.37"
+                                ></polyline></svg>View Live</span>
+                    </button>
                 </a>
+
                 <a
                     href={project.githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2 bg-purple-500 hover:bg-purple-600 rounded text-white"
+                    
                 >
-                    GitHub
+                    <button type="buttonfold" class="buttonfold">
+                        <span class="fold"></span>
+
+                        <div class="points_wrapper">
+                            <i class="point"></i>
+                            <i class="point"></i>
+                            <i class="point"></i>
+                            <i class="point"></i>
+                            <i class="point"></i>
+                            <i class="point"></i>
+                            <i class="point"></i>
+                            <i class="point"></i>
+                            <i class="point"></i>
+                            <i class="point"></i>
+                        </div>
+
+                        <span class="inner"
+                        >
+                            <FaGithub></FaGithub>
+                            GitHub
+                        </span>
+                    </button>
                 </a>
             </div>
         </div>
