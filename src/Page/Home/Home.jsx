@@ -33,8 +33,11 @@ import {
   SiNetlify,
   SiCanva,
   SiFramer,
+  SiTypescript
 } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
+import { PiSunHorizonFill } from "react-icons/pi";
+import { IoMdTime } from "react-icons/io";
 import emailjs from "emailjs-com";
 import ProjectCard from './Component/ProjectCard';
 
@@ -118,6 +121,7 @@ const sendEmail = (e) => {
       { name: "CSS", icon: <FaCss3Alt className="text-blue-500" size={40} /> },
       { name: "Tailwind CSS", icon: <SiTailwindcss className="text-sky-400" size={40} /> },
       { name: "JavaScript ", icon: <SiJavascript className="text-yellow-400" size={40} /> },
+      { name: "TypeScript ", icon: <SiTypescript className="text-white" size={40} /> },
       { name: "DaisyUI", icon: <SiDaisyui className="text-pink-400" size={40} /> },
       { name: "React", icon: <FaReact className="text-cyan-400" size={40} /> },
       { name: "Next Js.", icon: <RiNextjsFill className="text-white" size={40} /> },
@@ -132,9 +136,9 @@ const sendEmail = (e) => {
       { name: "Node.js", icon: <FaNodeJs className="text-green-500" size={40} /> },
       { name: "Express.js", icon: <SiExpress className="text-gray-300" size={40} /> },
       { name: "MongoDB", icon: <SiMongodb className="text-green-400" size={40} /> },
-    //   { name: "TanStack Query", icon: <SiTanstackquery className="text-red-400" size={40} /> },
+      { name: "TanStack Query", icon: <PiSunHorizonFill className="text-red-400" size={40} /> },
       { name: "Axios", icon: <SiAxios className="text-blue-400" size={40} /> },
-    //   { name: "Moment.js", icon: <SiMoment className="text-green-300" size={40} /> },
+      { name: "Moment.js", icon: <IoMdTime className="text-green-300" size={40} /> },
     ],
   },
   {
@@ -145,6 +149,7 @@ const sendEmail = (e) => {
       { name: "Netlify", icon: <SiNetlify className="text-sky-400" size={40} /> },
       { name: "Canva", icon: <SiCanva className="text-blue-400" size={40} /> },
       { name: "Framer Motion", icon: <SiFramer className="text-pink-500" size={40} /> },
+      { name: "GitHub", icon: <FaGithub className="text-white" size={40} /> }
     ],
   },
 ];

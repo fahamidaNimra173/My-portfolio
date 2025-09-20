@@ -13,7 +13,7 @@ const ProjectCard = () => {
         {projectsData.map((project) => (
           <div
             key={project.id}
-            className="bg-gray-900 rounded-xl shadow-lg overflow-hidden"
+            className="bg-black/20 backdrop-blur-md border-purple-400 border-1 shadow-[0_0_25px_6px_rgba(168,85,247,0.7),inset_0_0_25px_4px_rgba(168,85,247,0.4)] rounded-xl overflow-hidden"
           >
             {/* Slider */}
             <Swiper
@@ -41,7 +41,7 @@ const ProjectCard = () => {
               <h2 className="text-xl font-bold text-white">{project.name}</h2>
               <p className="text-gray-300 mt-2">{project.note}</p>
               <Link to={`/projects/${project.id}`}>
-                <button className="mt-4 px-4 py-2 bg-purple-500 text-white rounded hover:bg-purple-600">
+                <button className="mt-4 btnResume">
                   View Details
                 </button>
               </Link>
