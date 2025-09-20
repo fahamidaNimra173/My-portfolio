@@ -70,10 +70,10 @@ export const projectsData = [
       "Framer Motion",
       "Google Maps API"
     ],
-    banner1: "https://i.ibb.co.com/BVQgz4YN/p2banner2.png",
-    banner2: "https://i.ibb.co.com/5hvK9jQs/p2banner1.png",
-    banner3: "https://i.ibb.co.com/KpcrTKqK/p2banner3.png",
-    banner4: "https://i.ibb.co.com/B56CmwVC/p2banner4.png",
+    banner1: "https://i.ibb.co.com/JWKXN6DK/Screenshot-2025-09-04-171803.png",
+    banner2: "https://i.ibb.co.com/twCghswP/Screenshot-2025-09-04-171919.png",
+    banner3: "https://i.ibb.co.com/sJcWkPmT/Screenshot-2025-09-04-172018.png",
+    banner4: "https://i.ibb.co.com/yCT1jv3/Screenshot-2025-09-04-172041.png",
     liveLink: "https://hotel-client-side.web.app/",
     githubLink: "https://github.com/fahamidaNimra173/Hotel-Client-side",
     challenges: [
