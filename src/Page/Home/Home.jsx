@@ -348,7 +348,7 @@ const Home = () => {
     <div className="relative text-center bg-black/40 py-20 z-20">
       <h1 className="text-4xl font-bold libertinus mb-10 bg-gradient-to-r from-[#000000] via via-[#d015ff] to-whit">Get in Touch</h1>
       <p className="text-lg mb-8 alice text-gray-200">
-        Open to any adventure that involves learning and making cool stuff!
+        Open to crafting interfaces that feel like art and function like magic!
       </p>
 
 <div className="flex flex-row items-center justify-center gap-4">
@@ -445,10 +445,10 @@ const Home = () => {
       </div>
 
       {/* Small devices: Sidebar + intro in flex container, rest content outside */}
-      <div className="md:hidden p-5 pt-40 space-y-6">
+      <div className="md:hidden  pt-40 space-y-6">
         <div className="flex flex-col-reverse gap-5  items-center">
           {/* Sidebar + intro */}
-          <div className="bg-black mt-10 shadow-2xl patterned-bg  shadow-black text-center px-3 py-6 rounded-lg flex-shrink-0 ">
+          <div className="bg-black p-5 mt-10 shadow-2xl patterned-bg  shadow-black text-center px-3 py-6 rounded-lg flex-shrink-0 ">
             <div className="glass-container space-y-2 border-2 px-3 py-5 rounded-2xl">
               <img
                 className="profile-img mx-auto rounded-2xl "
@@ -497,8 +497,8 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="flex-1 text-center">
-            <h1 className=" font-bold text-[#d633ff] mb-6 text-3xl text-center kaushan">
+          <div className="flex-1 p-5 text-center">
+            <h1 className=" font-bold text-[#dc63fa] mb-6 text-3xl text-center kaushan">
               Painting the Web with Code and Color
             </h1>
             <p className="text-[16px] text-white dark:text-white font-medium alice mt-2">
@@ -521,7 +521,7 @@ const Home = () => {
         {/* Rest of the content below */}
 
         <section id='about1'>
-                      <div className=" my-20 ">
+                      <div className="p-5 my-20 ">
             <h1
       ref={ref}
       className="text-white mb-5 dark:text-white text-4xl elsie font-bold flex flex-wrap justify-center"
@@ -570,7 +570,7 @@ const Home = () => {
         </div>
         </section>
 
-            <section id='skills1' ref={skillsRef} className=" md:hidden ">
+            <section id='skills1' ref={skillsRef} className=" p-5 md:hidden ">
       <div className="max-w-5xl mx-auto">
        <h2
   className="text-5xl text-shadow-lg text-shadow-b-black text-wrap font-extrabold text-center libertinus mb-12
@@ -611,7 +611,7 @@ const Home = () => {
     </section>
     {/* eduction section */}
     <section id='education1'>
-         <div className='z-100 md:hidden my-20 '>
+         <div className='z-100 p-5 md:hidden my-20 '>
                       <section className="max-w-xl shadow-2xl shadow-white mx-auto p-6  rounded-lg bg-purple-600 text-white dark:text-white ">
       <h2 className="text-3xl font-bold mb-8 text-white dark:text-white text-center">Educational Milestones</h2>
 
@@ -630,17 +630,17 @@ const Home = () => {
     </section>
     </div>
             {/* projects section */}
-    <section id='project1'>
+    <section id='project1' >
       <ProjectCard></ProjectCard>
     </section>
 
     </section>
  
-         <section
+         {/* <section
       id='connect-me1'
       className="md:block mb-10 lg:hidden pt-20 text-white py-16 px-3 md:px-12 overflow-hidden contact-bg"
     >
-      {/* Floating Points */}
+
       <div className="points_wrapper">
         {[...Array(10)].map((_, i) => (
           <i className="point" key={i}></i>
@@ -651,25 +651,25 @@ const Home = () => {
   className="relative flex flex-col md:flex-row gap-12 items-center z-10 bg-cover bg-center bg-no-repeat p-8"
   style={{ backgroundImage: "url('https://i.ibb.co.com/23QX7Wxd/download-11-removebg-preview.png')" }}
 >
-  {/* LEFT DECOR IMAGE */}
+
   <img
     src="https://i.ibb.co.com/m5NKRCYr/Tokyo-Ghoul-Kaneki-Ken-1000-7.jpg"
     alt="Left decoration"
     className="absolute left-0 top-1/2 -translate-y-1/2 w-56 opacity-80 pointer-events-none"
   />
 
-  {/* RIGHT DECOR IMAGE */}
+
   <img
     src="https://i.ibb.co.com/zWs7pXCT/right.jpg"
     alt="Right decoration"
     className="absolute right-0 top-1/2 -translate-y-1/2 w-56 opacity-80 pointer-events-none"
   />
 
-  {/* LEFT CONTENT */}
+
   <div className="px-4 sm:pl-4 md:px-0 text-wrap max-w-full relative z-20">
     <h1 className="text-4xl font-bold mb-4">Get in Touch</h1>
     <p className="text-lg mb-8 text-gray-200 max-w-full">
-      Open to any adventure that involves learning and making cool stuff!
+     Open to crafting interfaces that feel like art and function like magic!
     </p>
 
     <div className="space-y-4 max-w-full">
@@ -721,7 +721,6 @@ const Home = () => {
     </div>
   </div>
 
-  {/* RIGHT SIDE FORM */}
   <div className="p-6 rounded-lg w-full h-full relative z-20 bg-transparent">
     <form ref={form} onSubmit={sendEmail} className="flex flex-col h-full">
       <div className="mb-4">
@@ -762,7 +761,139 @@ const Home = () => {
   </div>
 </div>
 
-    </section>
+    </section> */}
+    
+<section
+  id="connect-me1"
+  className="md:block lg:hidden h-full mb-1  text-white relative overflow-hidden"
+  style={{
+    backgroundImage: "url('https://i.ibb.co.com/23QX7Wxd/download-11-removebg-preview.png')",
+  // stretches to fit full width & height without crop
+  backgroundSize: "auto 100%",
+    backgroundRepeat:"repeat-x",
+    backgroundPosition: "center",
+  }}
+>
+  {/* Floating Points */}
+  <div className="points_wrapper">
+    {[...Array(10)].map((_, i) => (
+      <i className="point" key={i}></i>
+    ))}
+  </div>
+
+    <div className="relative  mt-35 grid md:grid-rows-2 gap-2 items-center z-10 px-2 py-10 w-full h-full">
+    {/* LEFT DECOR IMAGE */}
+    <img
+      src="https://i.ibb.co.com/m5NKRCYr/Tokyo-Ghoul-Kaneki-Ken-1000-7.jpg"
+      alt="Left decoration"
+      className="absolute  left-0 top-1/2 -translate-y-1/2 w-56 opacity-80 pointer-events-none"
+    />
+
+    {/* RIGHT DECOR IMAGE */}
+    <img
+      src="https://i.ibb.co.com/zWs7pXCT/right.jpg"
+      alt="Right decoration"
+      className="absolute right-0 top-1/2 -translate-y-1/2 w-56 opacity-80 pointer-events-none"
+    />
+
+    {/* LEFT SIDE CONTENT */}
+    <div className="relative text-center bg-black/40 pt-5 pb-5 z-20">
+      <h1 className="text-4xl font-bold libertinus mb-10 bg-gradient-to-r from-[#000000] via via-[#d015ff] to-whit">Get in Touch</h1>
+      <p className="text-lg mb-8 alice text-gray-200">
+        Open to crafting interfaces that feel like art and function like magic!
+      </p>
+
+<div className="flex flex-row items-center justify-center gap-4">
+  {/* <a
+    href="mailto:fahmidanimra@gmail.com"
+    className="text-purple-200 hover:scale-110 transition-transform"
+  >
+    <MdEmail size={28} />
+  </a> */}
+
+  <a
+    href="https://www.linkedin.com/in/fahmida-nimra/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-400 hover:scale-110 transition-transform"
+  >
+    <FaLinkedin size={48} />
+  </a>
+
+  <a
+    href="https://github.com/fahamidaNimra173"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-gray-300 hover:scale-110 transition-transform"
+  >
+    <FaGithub size={48} />
+  </a>
+
+  <a
+    href="https://wa.me/8801568029731"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-green-400 hover:scale-110 transition-transform"
+  >
+    <FaWhatsapp size={48} />
+  </a>
+</div>
+
+    </div>
+
+    {/* RIGHT SIDE - CONTACT FORM */}
+    <div className="px-2 mb-10 rounded-lg relative z-20 bg-black/40">
+      <form ref={form} onSubmit={sendEmail}>
+        <div className="mb-4">
+          <label className="block mb-2 text-whites">Name</label>
+          <input
+            name="user-name"
+            type="text"
+            className="w-full p-3 rounded border border-gray-400 text-white outline-none focus:ring-2 focus:ring-purple-400"
+            placeholder="Your Name"
+          />
+        </div>
+        <div className="mb-4">
+          <label className="block mb-2 text-white">Email</label>
+          <input
+            type="email"
+            name="user-email"
+            className="w-full p-3 rounded border border-gray-400 text-white outline-none focus:ring-2 focus:ring-purple-400"
+            placeholder="Your Email"
+          />
+        </div>
+        <div className="mb-4">
+          <label className="block mb-2 text-white">Message</label>
+          <textarea
+            name="message"
+            rows="4"
+            className="w-full p-3 rounded border border-gray-400 text-white outline-none focus:ring-2 focus:ring-purple-400"
+            placeholder="Your Message"
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          className="bg-purple-500 hover:bg-purple-600 transition-all w-full p-3 rounded font-semibold"
+        >
+          Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+<section>
+  <div className='bg-black text-center py-5 '>
+<h1 className="libertinus text-lg text-white bg-white/13 backdrop-blur-sm px-3 py-3   shadow-lg border-b  border-white/20 text-center w-full overflow-hidden">
+  © 2025 Fahmida Nimra | Curiosity Drives Creation
+</h1>
+
+
+  </div>
+</section>
+
+
+
+    
 
       </div>
     </div>
