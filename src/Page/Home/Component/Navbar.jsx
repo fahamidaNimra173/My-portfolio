@@ -88,7 +88,7 @@ const Navbar = () => {
       >
         {/* Sidebar Header */}
         <div className="flex items-center justify-between p-6 border-b border-purple-500/30">
-          <h2 className="text-2xl font-bold text-white alice bg-gradient-to-r from-white to-purple-300 bg-clip-text text-transparent">
+          <h2 className="text-2xl font-bold text-white alice bg-gradient-to-r from-white to-purple-300 bg-clip-text ">
             Menu
           </h2>
           <button
