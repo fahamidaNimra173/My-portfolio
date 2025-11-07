@@ -680,7 +680,7 @@ nav>ul>li{
   position: absolute;
   width: 99%;
   height: 99%;
-  background-color: #151515;     /* inner panel */
+  background-color: #000000;     /* inner panel */
   border-radius: 5px;
   color: white;
   display: flex;

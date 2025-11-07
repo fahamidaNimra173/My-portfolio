@@ -41,6 +41,8 @@ import { IoMdTime } from "react-icons/io";
 import emailjs from "emailjs-com";
 import ProjectCard from './Component/ProjectCard';
 import { useState } from "react";
+import SparklesPreview from "./Component/EducationAnimation";
+
 
 
 const Home = () => {
@@ -238,7 +240,7 @@ const sendEmail = (e) => {
         <div
           className="
             flex-1
-            pl-3 pt-40 md:pt-60 space-y-11 
+            pl-3 pt-30 lg:pt-50 space-y-9 
             max-h-screen overflow-y-auto
           "
         >
@@ -328,29 +330,7 @@ const sendEmail = (e) => {
       </div>
     </section>
       <div className='relative p-5 lg:pr-15 hidden md:block z-10 my-20 '>
-      {/* <section id='education' className="lg:py-30 lg:flex lg:items-center lg:justify-between    p-6 w-full rounded-lg text-white dark:text-white ">
-                        <div>
-                             <h2 className="text-3xl lg:text-5xl font-bold mb-8 text-white dark:text-white text-center">Educational <span className='lg:ml-20 text-black'>Milestone</span> </h2>
-                        </div>
-     
-
-      <div className="relative border-l-3  pl-6">
-        
-        <div className="mb-8 ml-4 py-10">
-        
-          <div className="absolute -ml-14 ">
-<button class="mouse">
-  <div class="scroll"></div>
-
-</button></div>
-
-          <h3 className="text-xl font-semibold">BSc in Computer Science & Engineering (CSE)</h3>
-          <p className="text-white font-medium dark:text-white">Port City International University</p>
-          <p className="text-white font-medium dark:text-white">CGPA: 3.48</p>
-          <p className="text-white font-medium dark:text-white">Graduated: 2024</p>
-        </div>
-      </div>
-    </section> */}
+    
 
 
 <div class="card e-card playing">
@@ -364,7 +344,7 @@ const sendEmail = (e) => {
     <div class="wave1"></div>
 
     
-    <div class="back">
+    <div class="back bg-black">
       <div class="back-content">
         <section
           id="education"
@@ -372,7 +352,7 @@ const sendEmail = (e) => {
         >
           <h2 class="text-3xl lg:text-5xl font-bold mb-8 text-center">
             Educational<br></br>
-            <span class="lg:ml-4 text-purple-500 elsie">Milestone</span>
+            <span ><SparklesPreview></SparklesPreview> </span>
           </h2>
 
           <div class="relative 
