@@ -8,7 +8,7 @@ import "swiper/css";
 
 const ProjectCard = () => {
   return (
-    <div className="px-6 py-10 mb-20 bg-fixed bg-contain"
+    <div className="px-6 py-5 mb-20 bg-fixed bg-contain"
       style={{
         backgroundImage:
           "url('https://i.ibb.co.com/zTQrswRG/a038022e-c551-426e-b34d-4cd035a75d08-removebg-preview.png')",

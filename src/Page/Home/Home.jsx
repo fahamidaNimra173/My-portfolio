@@ -42,6 +42,10 @@ import emailjs from "emailjs-com";
 import ProjectCard from './Component/ProjectCard';
 import { useState } from "react";
 import SparklesPreview from "./Component/EducationAnimation";
+import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
+import { CometCard } from "@/components/ui/comet-card";
+import ColourfulTextDemo from "./Component/ColorfulTitle";
+
 
 
 
@@ -175,7 +179,7 @@ const sendEmail = (e) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once:  false });
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen scroll-smooth">
       {/* Large devices: flex row with sticky sidebar and main content */}
       <div className="hidden md:flex md:flex-row gap-10 md:gap-5 items-start min-h-screen">
         {/* Sidebar */}
@@ -237,6 +241,9 @@ const sendEmail = (e) => {
         </div>
 
         {/* Main Content */}
+      
+          
+       
         <div
           className="
             flex-1
@@ -244,9 +251,12 @@ const sendEmail = (e) => {
             max-h-screen overflow-y-auto
           "
         >
-          <h1 className="text-4xl font-bold p-5 lg:pr-15 text-[#d633ff] kaushan md:text-left text-center">
+            <BackgroundBeamsWithCollision>
+                          <div>
+          {/* <h1 className="text-4xl font-bold p-5 lg:pr-15 text-[#d633ff] kaushan md:text-left text-center">
             Painting the Web with Code and Color
-          </h1>
+          </h1> */}
+          <ColourfulTextDemo></ColourfulTextDemo>
           <p className="text-[20px] text-white p-5 lg:pr-15 dark:text-white font-medium alice">
             Combining artistic passion with technical skill, I create dynamic,
             user-friendly websites that bring ideas to life with clarity and
@@ -261,6 +271,10 @@ const sendEmail = (e) => {
             </a>
             <button onClick={scrollToContact} className="btnResume">Contact Me</button>
           </div>
+          </div>
+            </BackgroundBeamsWithCollision>
+
+
           <section id='about'>
                  <div className=' p-5 lg:pr-15 md:my-20 lg:my-30 space-y-5'>
             <h1 className="text-white dark:text-white text-4xl elsie text-center">About <span className='text-[#e787ff]'>Me</span> </h1>
@@ -354,9 +368,18 @@ const sendEmail = (e) => {
             Educational<br></br>
             <span ><SparklesPreview></SparklesPreview> </span>
           </h2>
-
+          {/* <CometCard>
+            <button
+             className="my-10 flex  cursor-pointer flex-col items-stretch  border-0 bg-[#000000]   md:my-20 md:p-4"
+        aria-label="View invite F7RA"
+        style={{
+          transformStyle: "preserve-3d",
+          transform: "none",
+          opacity: 1,
+        }}
+        > */}
           <div class="relative 
-                        shadow-[0_0_25px_6px_rgba(168,85,247,0.7),inset_0_0_15px_20px_rgba(168,85,247,0.8)]
+                        shadow-[0_0_25px_6px_rgba(168,85,247,0.7),inset_0_0_20px_10px_rgba(168,85,247,0.8)]
                         rounded-b-xl p-10 border-1 border-purple-600 rounded-3xl">
             <div class=" flex flex-col items-center gap-7 py-15">
              <PiStudentFill className="text-purple-400 h-16 w-25"></PiStudentFill>
@@ -373,6 +396,10 @@ const sendEmail = (e) => {
               </div>
             </div>
           </div>
+            {/* </button>
+          </CometCard> */}
+
+
         </section>
       </div>
     </div>
@@ -526,9 +553,11 @@ const sendEmail = (e) => {
       </div>
 
       {/* Small devices: Sidebar + intro in flex container, rest content outside */}
-      <div className="md:hidden  pt-40 space-y-6">
-        <div className="flex flex-col-reverse gap-5  items-center">
+      <div className="md:hidden  pt-35 space-y-6">
+           <BackgroundBeamsWithCollision>
+                    <div className="flex flex-col-reverse gap-5  items-center">
           {/* Sidebar + intro */}
+  
           <div className="bg-black p-5 mt-10 shadow-2xl patterned-bg  shadow-black text-center px-3 py-6 rounded-lg flex-shrink-0 ">
             <div className="glass-container space-y-2 border-2 px-3 py-5 rounded-2xl">
               <img
@@ -578,10 +607,8 @@ const sendEmail = (e) => {
             </div>
           </div>
 
-          <div className="flex-1 p-5 text-center">
-            <h1 className=" font-bold text-[#dc63fa] mb-6 text-3xl text-center kaushan">
-              Painting the Web with Code and Color
-            </h1>
+          <div className="flex-1 px-5 text-center">
+          <ColourfulTextDemo></ColourfulTextDemo>
             <p className="text-[16px] text-white dark:text-white font-medium alice mt-2">
               Combining artistic passion with technical skill, I create dynamic,
               user-friendly websites that bring ideas to life with clarity and
@@ -598,6 +625,8 @@ const sendEmail = (e) => {
             </div>
           </div>
         </div>
+          </BackgroundBeamsWithCollision>
+
 
         {/* Rest of the content below */}
 
@@ -742,7 +771,7 @@ const sendEmail = (e) => {
     </section> */}
 
 
-<div class="card e-card my-55 playing">
+<div class="card e-card my-35 playing">
   <div class="content">
   
 
@@ -755,15 +784,12 @@ const sendEmail = (e) => {
       <div class="back-content">
         <section
           id="education1"
-          class="p-2 w-full rounded-lg text-purple-100 flex flex-col gap-5 items-center justify-center"
+          class="p-2 w-full rounded-lg text-purple-100 flex flex-col gap-3 items-center justify-center"
         >
-          <h2 class="text-3xl lg:text-5xl font-bold mb-2 pt-8 text-center">
-            Educational<br></br>
-            <span class="lg:ml-4 text-purple-500 elsie">Milestone</span>
-          </h2>
+
 
           <div class="relative 
-                        shadow-[0_0_25px_6px_rgba(168,85,247,0.7),inset_0_0_15px_20px_rgba(168,85,247,0.8)]
+                        shadow-[0_0_25px_6px_rgba(168,85,247,0.7),inset_0_0_25px_7px_rgba(168,85,247,0.8)]
                         rounded-b-xl p-10 border-1 border-purple-600 rounded-3xl">
             <div class=" flex flex-col items-center gap-7 py-12">
              <PiStudentFill className="text-purple-400 h-16 w-25"></PiStudentFill>
@@ -780,6 +806,10 @@ const sendEmail = (e) => {
               </div>
             </div>
           </div>
+            <h2 class="text-3xl lg:text-5xl font-bold mb-2  pl-7 text-center">
+            Educational<br></br>
+            <SparklesPreview></SparklesPreview>
+          </h2>
         </section>
       </div>
     </div>

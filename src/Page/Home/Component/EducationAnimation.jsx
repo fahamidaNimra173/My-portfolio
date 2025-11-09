@@ -10,7 +10,7 @@ export default function SparklesPreview() {
                 className="text-3xl lg:text-5xl font-bold lg:ml-4 text-purple-500 elsie text-center  relative z-20">
                 Milestone
             </h1>
-            <div className="w-[20rem] h-40 relative">
+            <div className="w-[20rem] h-10 lg:h-40 relative">
                 {/* Gradients */}
                 <div
                     className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
