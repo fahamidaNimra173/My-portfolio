@@ -95,6 +95,56 @@ export const projectsData = [
   },
   {
     id: 3,
+    name: "JobQuest",
+    note: "JobQuest is basically a job portal. It’s a team project where users can search and apply for jobs, view company and salary details, interact on a community page, and leave reviews. The role-based dashboard is still under development.",
+    description:
+      "JobQuest is a job portal web application developed by our team. Users can search for jobs and view details such as location, work type (remote or onsite), salary, and company information, and apply directly. Employers can post job listings, and the platform includes a community page where users can share thoughts, ask questions, and react or comment on posts. Users can also leave reviews about the portal. We are still working on the role-based dashboard, which will provide different functionalities for job seekers and employers.",
+    keyFeatures: [
+      "A role-based dashboard providing different functionalities for job seekers and employers.",
+      "Secure authentication using JWT and NextAuth with Google login.",
+      "Job search with detailed listings and the ability to apply directly.",
+      "Filter-based search to easily find relevant jobs.",
+      "Review system and the ability for users to save jobs.",
+      "Community page where users can post their thoughts, react to posts, comment, and react to comments.",
+      "Employer functionalities including posting jobs and selecting candidates.",
+      "Dark/Light mode toggle for better accessibility",
+      "A career advice page to guide users in their professional growth."
+    ],
+    technologys: [
+      "Next Js",
+      "TypeScript",
+      "Tailwind CSS",
+      'Node Js',
+      'Express Js',
+      'Mongoose',
+      'JWT Authentication',
+      'Axios',
+      'Tanstack',
+      'lottie',
+      'Framer MOtion',
+      'ShadCN',
+      'Acernity UI',
+      "React lucide Icons",
+
+
+    ],
+    banner1: "https://i.ibb.co.com/w3BDB4f/screencapture-localhost-3000-2025-11-11-16-25-29.png",
+    banner2: "https://i.ibb.co.com/twJCptrb/screencapture-localhost-3000-community-2025-11-11-16-22-57.png",
+    banner3: "https://i.ibb.co.com/YF2ZNDDg/screencapture-jonquest-vercel-app-jobs-2025-11-11-14-05-26.png",
+    banner4: "https://i.ibb.co.com/ymSVZpQT/screencapture-jonquest-vercel-app-carrer-Advice-2025-11-11-14-05-01.png",
+    liveLink: "https://jonquest.vercel.app/",
+    githubLink: "https://github.com/mottasimsadi/job-quest-frontend/tree/landing-page-nimra",
+    challenges: [
+      "The main challenge was building the community page, ensuring smooth user experience for posts, reactions, and comments. I had to track if a user had previously reacted and handle changes between reactions (like switching from “haha” to “love”) while keeping reaction counts accurate. To solve this, I created a user ID array for each reaction on both posts and comments to maintain uniqueness."
+    ],
+    futureImprovements: [
+      "Integrating Socket.IO for live notifications on reactions and comments in the community page.",
+      "Extract information from user resumes to enhance profile details.",
+      "Add a video resume section to allow users to showcase their skills visually."
+    ]
+  },
+  {
+    id: 4,
     name: "PixelPulse",
     note: "PixelPulse is a simple landing page built with Next.js. It’s a digital marketing solutions website that I created in less than a day.",
     description:
@@ -134,7 +184,7 @@ export const projectsData = [
     ]
   },
   {
-    id: 4,
+    id: 5,
     name: "Ema Ena",
     note: "A simple landing page built with Next.js for a digital marketing service offering conversion-focused pages from $200, delivered in 5 days. Fully responsive across all devices.",
     description:
@@ -173,45 +223,45 @@ export const projectsData = [
     ]
   },
 
-  {
-    id: 5,
-    name: "Verdura",
-    note: "A full-stack smart plant care companion for tracking, managing, and nurturing your indoor and outdoor greenery.",
-    description:
-      "Verdura is a plant care management platform that empowers plant lovers to track daily and scheduled care activities for their indoor and outdoor plants. Users can add plants with details such as category, care level, watering frequency, and health status. The platform supports reminders, health tracking, and personalized plant dashboards for each user. Secure authentication ensures that each user’s plant data is private, while update and delete features provide complete control over plant records. Verdura’s vibrant, nature-inspired design makes plant care both easy and enjoyable.",
-    keyFeatures: [
-      "Secure user authentication with email/password and Google login",
-      "Personalized dashboard showing only the user's plants",
-      "Add, update, and delete plant records",
-      "Detailed plant pages with category, care level, watering schedule, and health status",
-      "Sort plants by next watering date or care level",
-      "Private routes for managing and viewing plants",
-      "Beginner-friendly tips and common plant care mistakes section",
-      "Dark/Light mode toggle for better accessibility",
-      "Responsive design optimized for mobile, tablet, and desktop"
-    ],
-    technologys: [
-      "React",
-      "Tailwind CSS",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "Firebase",
-      "Lottie React",
-      "Date-fns"
-    ],
-    banner1: "https://i.ibb.co.com/spYxxVMr/p3banner1.png",
-    banner2: "https://i.ibb.co.com/HLfxDmbM/p3banner2.png",
-    banner3: "https://i.ibb.co.com/cXs6RKJ6/p3banner3.png",
-    banner4: "https://i.ibb.co.com/xtrFnzbN/p3banneer4.png",
-    liveLink: "https://plant-clint-site.web.app/",
-    githubLink: "https://github.com/fahamidaNimra173/Plant-client-side",
-    challenges: [
-      "As my first full-stack project, implementing CRUD operations effectively was initially challenging. A particular difficulty was enabling users to submit reviews for specific plants and displaying those reviews only on the relevant plant’s details page. I overcame this by learning to apply backend filtering to retrieve data for a specific plant ID."
-    ],
-    futureImprovements: [
-      "Implement a watering reminder system by calculating the next watering date based on the last recorded watering event.",
-      "Add a community post section where users can share plant health concerns or care tips, allowing others to view and provide feedback."
-    ]
-  }
+  // {
+  //   id: 5,
+  //   name: "Verdura",
+  //   note: "A full-stack smart plant care companion for tracking, managing, and nurturing your indoor and outdoor greenery.",
+  //   description:
+  //     "Verdura is a plant care management platform that empowers plant lovers to track daily and scheduled care activities for their indoor and outdoor plants. Users can add plants with details such as category, care level, watering frequency, and health status. The platform supports reminders, health tracking, and personalized plant dashboards for each user. Secure authentication ensures that each user’s plant data is private, while update and delete features provide complete control over plant records. Verdura’s vibrant, nature-inspired design makes plant care both easy and enjoyable.",
+  //   keyFeatures: [
+  //     "Secure user authentication with email/password and Google login",
+  //     "Personalized dashboard showing only the user's plants",
+  //     "Add, update, and delete plant records",
+  //     "Detailed plant pages with category, care level, watering schedule, and health status",
+  //     "Sort plants by next watering date or care level",
+  //     "Private routes for managing and viewing plants",
+  //     "Beginner-friendly tips and common plant care mistakes section",
+  //     "Dark/Light mode toggle for better accessibility",
+  //     "Responsive design optimized for mobile, tablet, and desktop"
+  //   ],
+  //   technologys: [
+  //     "React",
+  //     "Tailwind CSS",
+  //     "Node.js",
+  //     "Express.js",
+  //     "MongoDB",
+  //     "Firebase",
+  //     "Lottie React",
+  //     "Date-fns"
+  //   ],
+  //   banner1: "https://i.ibb.co.com/spYxxVMr/p3banner1.png",
+  //   banner2: "https://i.ibb.co.com/HLfxDmbM/p3banner2.png",
+  //   banner3: "https://i.ibb.co.com/cXs6RKJ6/p3banner3.png",
+  //   banner4: "https://i.ibb.co.com/xtrFnzbN/p3banneer4.png",
+  //   liveLink: "https://plant-clint-site.web.app/",
+  //   githubLink: "https://github.com/fahamidaNimra173/Plant-client-side",
+  //   challenges: [
+  //     "As my first full-stack project, implementing CRUD operations effectively was initially challenging. A particular difficulty was enabling users to submit reviews for specific plants and displaying those reviews only on the relevant plant’s details page. I overcame this by learning to apply backend filtering to retrieve data for a specific plant ID."
+  //   ],
+  //   futureImprovements: [
+  //     "Implement a watering reminder system by calculating the next watering date based on the last recorded watering event.",
+  //     "Add a community post section where users can share plant health concerns or care tips, allowing others to view and provide feedback."
+  //   ]
+  // }
 ];

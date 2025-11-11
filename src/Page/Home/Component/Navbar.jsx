@@ -39,6 +39,14 @@ const Navbar = () => {
     { id: "education", label: "Education", icon: GraduationCap, href: "#education" },
     { id: "connect-me", label: "Contact Me", icon: Mail, href: "#connect-me" },
   ];
+    const menuItems1 = [
+    { id: "home1", label: "Home", icon: Home, href: "/" },
+    { id: "about1", label: "About Me", icon: User, href: "#about" },
+    { id: "skills1", label: "Skills", icon: Code, href: "#skills" },
+    { id: "project1", label: "Projects", icon: Briefcase, href: "#project" },
+    { id: "education1", label: "Education", icon: GraduationCap, href: "#education" },
+    { id: "connect-me1", label: "Contact Me", icon: Mail, href: "#connect-me" },
+  ];
 
   return (
     <>
@@ -150,7 +158,7 @@ const Navbar = () => {
 
         {/* Menu Items */}
         <nav className="relative flex flex-col p-4 space-y-2 overflow-y-auto max-h-[calc(100vh-200px)]">
-          {menuItems.map((item, index) => {
+          {menuItems1.map((item, index) => {
             const Icon = item.icon;
             return (
               <a
