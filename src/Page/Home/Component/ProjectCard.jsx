@@ -13,8 +13,9 @@ const ProjectCard = () => {
         backgroundImage:
           "url('https://i.ibb.co.com/zTQrswRG/a038022e-c551-426e-b34d-4cd035a75d08-removebg-preview.png')",
       }}>
-      <h1 className="md:text-6xl md:my-19 my-5 text-4xl font-bold text-center libertinus
-        bg-gradient-to-r from-white via-[#d015ff] to-white bg-clip-text text-transparent">
+      <h1 className="md:text-6xl md:my-19 my-5 text-4xl font-bold text-center elsie
+         bg-gradient-to-r from-[#ffffff]  via-[#ffffff] to-[#cc00ff] 
+    bg-clip-text text-transparent">
         My Projects
       </h1>
 

@@ -51,18 +51,18 @@ const Navbar = () => {
   return (
     <>
       <div className={`fixed z-50 w-full transition-all duration-300 ${scrolled ? 'pt-2' : 'pt-4'}`}>
-        <nav className={`mx-auto max-w-7xl px-4 md:px-6 transition-all duration-300`}>
-          <div className={`flex items-center justify-between rounded-3xl bg-gradient-to-r from-black via-black to-purple-500 shadow-2xl ${scrolled ? 'shadow-purple-500/20' : 'shadow-black'} px-4 md:px-6  backdrop-blur-sm border border-purple-500/20`}>
+        <nav className={`mx-auto lg:relative max-w-7xl px-4 md:px-6 transition-all duration-300`}>
+          <div className={`flex  lg:py-3 items-center justify-between rounded-3xl bg-gradient-to-r from-black via-black to-purple-500 shadow-2xl ${scrolled ? 'shadow-purple-500/20' : 'shadow-black'} px-4 md:px-6  backdrop-blur-sm border border-purple-500/20`}>
 
             {/* Logo with glow effect */}
             <div className="flex items-center gap-2 group">
-              <div className="relative">
+              <div className="md:relative lg:absolute lg:z-100 lg:-top-7">
                 <img
-                  className="w-16 md:w-20 lg:w-24 h-auto transition-transform duration-300 group-hover:scale-105"
+                  className="w-16 md:w-20 lg:w-24  transition-transform duration-300 group-hover:scale-105"
                   src="https://i.ibb.co.com/8DwYkFCb/White-Typography-Initial-CR-Logo-3.png"
                   alt="Logo"
                 />
-                <div className="absolute inset-0 bg-purple-500/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                {/* <div className="absolute inset-0 bg-purple-500/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div> */}
               </div>
             </div>
 
