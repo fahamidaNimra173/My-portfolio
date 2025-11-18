@@ -266,7 +266,7 @@ const sendEmail = (e) => {
             devices.
           </p>
           <div className="flex gap-10 p-5 lg:pr-15 justify-center items-center">
-            <a href="/FAHMIDA NIMRA Resume-MERN Stack Developer-fahmidanimra@gmail.com.pdf" download="FAHMIDA NIMRA Resume-MERN Stack Developer-fahmidanimra@gmail.pdf">
+            <a href="/FAHMIDA NIMRA Resume-MERN Stack Developer.pdf" download="FAHMIDA NIMRA Resume-MERN Stack Developer-fahmidanimra@gmail.pdf">
                  <button className="btnResume">Resume</button>
             </a>
             <button onClick={scrollToContact} className="btnResume">Contact Me</button>
@@ -418,14 +418,8 @@ const sendEmail = (e) => {
 
 <section
   id="connect-me"
-  className="md:hidden lg:block h-[700px] mb-1  text-white relative overflow-hidden"
-  style={{
-    backgroundImage: "url('https://i.ibb.co.com/23QX7Wxd/download-11-removebg-preview.png')",
-  // stretches to fit full width & height without crop
-  backgroundSize: "auto 100%",
-    backgroundRepeat:"repeat-x",
-    backgroundPosition: "contain",
-  }}
+  className="md:hidden lg:block  mb-1 bg-black text-white relative overflow-hidden"
+  
 >
   {/* Floating Points */}
   <div className="points_wrapper">
@@ -434,7 +428,7 @@ const sendEmail = (e) => {
     ))}
   </div>
 
-    <div className="relative  mt-35 grid md:grid-cols-2 gap-12 items-center z-10 px-8 py-10 w-full h-full">
+    <div className="relative   grid md:grid-cols-2 gap-12 items-center z-10 px-8 py-5 w-full h-full">
     {/* LEFT DECOR IMAGE */}
     <img
       src="https://i.ibb.co.com/m5NKRCYr/Tokyo-Ghoul-Kaneki-Ken-1000-7.jpg"
@@ -450,7 +444,7 @@ const sendEmail = (e) => {
     />
 
     {/* LEFT SIDE CONTENT */}
-    <div className="relative text-center bg-black/40 py-20 z-20">
+    <div className="relative text-center  py-20 z-20">
       <h1 className="text-4xl font-bold libertinus mb-10 bg-gradient-to-r from-[#000000] via via-[#d015ff] to-whit">Get in Touch</h1>
       <p className="text-lg mb-8 alice text-gray-200">
         Open to crafting interfaces that feel like art and function like magic!
@@ -495,7 +489,7 @@ const sendEmail = (e) => {
     </div>
 
     {/* RIGHT SIDE - CONTACT FORM */}
-    <div className="p-6 mb-10 rounded-lg relative z-20 bg-black/40">
+    <div className="p-6 mb-5 rounded-lg relative z-20 ">
       <form ref={form} onSubmit={sendEmail}>
         <div className="mb-4">
           <label className="block mb-2">Name</label>
@@ -618,7 +612,7 @@ const sendEmail = (e) => {
               devices.
             </p>
             <div className="flex gap-5  items-center justify-center mt-6">
-             <a href="/FAHMIDA NIMRA Resume-MERN Stack Developer-fahmidanimra@gmail.com.pdf" download="FAHMIDA NIMRA Resume-MERN Stack Developer-fahmidanimra@gmail.pdf">
+             <a href="/FAHMIDA NIMRA Resume-MERN Stack Developer.pdf" download="FAHMIDA NIMRA Resume-MERN Stack Developer-fahmidanimra@gmail.pdf">
                  <button className="btnResume">Resume</button>
             </a>
               <button onClick={scrollToContact1} className="btnResume text-sm px-5 py-2">Contact Me</button>
@@ -832,14 +826,8 @@ const sendEmail = (e) => {
     
 <section
   id="connect-me1"
-  className="md:block lg:hidden h-full mb-1  text-white relative overflow-hidden"
-  style={{
-    backgroundImage: "url('https://i.ibb.co.com/23QX7Wxd/download-11-removebg-preview.png')",
-  // stretches to fit full width & height without crop
-  backgroundSize: "auto 100%",
-    backgroundRepeat:"repeat-x",
-    backgroundPosition: "center",
-  }}
+  className="md:block lg:hidden h-full mb-1 bg-black text-white relative overflow-hidden"
+ 
 >
   {/* Floating Points */}
   <div className="points_wrapper">
@@ -848,7 +836,7 @@ const sendEmail = (e) => {
     ))}
   </div>
 
-    <div className="relative  mt-35 grid md:grid-rows-2 gap-2 items-center z-10 px-2 py-10 w-full h-full">
+    <div className="relative  mt-5 grid md:grid-rows-2 gap-2 items-center z-10 px-2 py-10 w-full h-full">
     {/* LEFT DECOR IMAGE */}
     <img
       src="https://i.ibb.co.com/m5NKRCYr/Tokyo-Ghoul-Kaneki-Ken-1000-7.jpg"

@@ -444,7 +444,7 @@ nav>ul>li{
 }
 
 .points_wrapper .point {
-  bottom: -10px;
+  top: 10px;
   position: absolute;
   animation: floating-points infinite ease-in-out;
   pointer-events: none;
@@ -455,13 +455,13 @@ nav>ul>li{
 }
 @keyframes floating-points {
   0% {
-    transform: translateY(0);
+    transform: translateY(10);
   }
   85% {
-    opacity: 0;
+    opacity: 10;
   }
   100% {
-    transform: translateY(-55px);
+    transform: translateY(500px);
     opacity: 0;
   }
 }
@@ -469,13 +469,13 @@ nav>ul>li{
   left: 10%;
   opacity: 1;
   animation-duration: 2.35s;
-  animation-delay: 0.2s;
+  animation-delay: 0.1s;
 }
 .points_wrapper .point:nth-child(2) {
   left: 30%;
   opacity: 0.7;
   animation-duration: 2.5s;
-  animation-delay: 0.5s;
+  animation-delay: 0.2s;
 }
 .points_wrapper .point:nth-child(3) {
   left: 25%;
@@ -519,6 +519,18 @@ nav>ul>li{
 }
 .points_wrapper .point:nth-child(10) {
   left: 65%;
+  opacity: 1;
+  animation-duration: 2.5s;
+  animation-delay: 0.2s;
+}
+.points_wrapper .point:nth-child(11) {
+  left: 15%;
+  opacity: 1;
+  animation-duration: 2.5s;
+  animation-delay: 0.2s;
+}
+.points_wrapper .point:nth-child(12) {
+  left: 75%;
   opacity: 1;
   animation-duration: 2.5s;
   animation-delay: 0.2s;

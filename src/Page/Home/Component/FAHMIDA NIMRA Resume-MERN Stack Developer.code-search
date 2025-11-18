@@ -1,0 +1,23 @@
+# Query: FAHMIDA NIMRA Resume-MERN Stack Developer
+# ContextLines: 1
+
+8 results - 2 files
+
+src\Page\Home\Home.jsx:
+  268            <div className="flex gap-10 p-5 lg:pr-15 justify-center items-center">
+  269:             <a href="/FAHMIDA NIMRA Resume-MERN Stack Developer.pdf" download="FAHMIDA NIMRA Resume-MERN Stack Developer-fahmidanimra@gmail.pdf">
+  270                   <button className="btnResume">Resume</button>
+
+  620              <div className="flex gap-5  items-center justify-center mt-6">
+  621:              <a href="/FAHMIDA NIMRA Resume-MERN Stack Developer.pdf" download="FAHMIDA NIMRA Resume-MERN Stack Developer-fahmidanimra@gmail.pdf">
+  622                   <button className="btnResume">Resume</button>
+
+src\Page\Home\Component\Navbar.jsx:
+  107                <div className="hidden md:block">
+  108:                 <a href="/FAHMIDA NIMRA Resume-MERN Stack Developer.pdf" download="FAHMIDA NIMRA Resume-MERN Stack Developer-fahmidanimra@gmail.com.pdf">
+  109                    <button className="btnResume">Resume</button>
+
+  202            <a
+  203:             href="/FAHMIDA NIMRA Resume-MERN Stack Developer.pdf"
+  204:             download="FAHMIDA NIMRA Resume-MERN Stack Developer-fahmidanimra@gmail.com.pdf"
+  205              className="group flex items-center gap-4 px-5 py-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-pink-600 hover:to-purple-600 rounded-xl transition-all duration-300 relative overflow-hidden shadow-lg hover:shadow-purple-500/50 hover:scale-105 active:scale-95"

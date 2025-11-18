@@ -105,7 +105,7 @@ const Navbar = () => {
             <div className="flex items-center gap-3">
               {/* Resume Button - Desktop */}
               <div className="hidden md:block">
-                <a href="/FAHMIDA NIMRA Resume-MERN Stack Developer-fahmidanimra@gmail.com.pdf" download="FAHMIDA NIMRA Resume-MERN Stack Developer-fahmidanimra@gmail.com.pdf">
+                <a href="/FAHMIDA NIMRA Resume-MERN Stack Developer.pdf" download="FAHMIDA NIMRA Resume-MERN Stack Developer-fahmidanimra@gmail.com.pdf">
                   <button className="btnResume">Resume</button>
                 </a>
               </div>
@@ -200,7 +200,7 @@ const Navbar = () => {
 
           {/* Resume Button */}
           <a
-            href="/FAHMIDA NIMRA Resume-MERN Stack Developer-fahmidanimra@gmail.com.pdf"
+            href="/FAHMIDA NIMRA Resume-MERN Stack Developer.pdf"
             download="FAHMIDA NIMRA Resume-MERN Stack Developer-fahmidanimra@gmail.com.pdf"
             className="group flex items-center gap-4 px-5 py-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-pink-600 hover:to-purple-600 rounded-xl transition-all duration-300 relative overflow-hidden shadow-lg hover:shadow-purple-500/50 hover:scale-105 active:scale-95"
             onClick={() => setSidebarOpen(false)}
