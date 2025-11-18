@@ -184,13 +184,7 @@ const sendEmail = (e) => {
       <div className="hidden md:flex md:flex-row gap-10 md:gap-5 items-start min-h-screen">
         {/* Sidebar */}
         <div
-          className="
-                    bg-black 
-          sticky top-0 
-          min-h-screen shadow-2xl patterned-bg shadow-black text-center 
-          md:px-10 px-3 py-15 lg:px-20 md:py-20
-           
-          flex-shrink
+          className=" bg-black sticky top-0 min-h-screen shadow-fuchsia-400 patterned-bg shadow-2xl text-center md:px-10 px-3 py-15 lg:px-20 md:py-20 flex-shrink
           "
         >
           <div className="glass-container sticky top-20 space-y-2 border-2 px-3 py-5 rounded-2xl">

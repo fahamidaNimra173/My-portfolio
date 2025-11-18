@@ -39,7 +39,7 @@ const Navbar = () => {
     { id: "education", label: "Education", icon: GraduationCap, href: "#education" },
     { id: "connect-me", label: "Contact Me", icon: Mail, href: "#connect-me" },
   ];
-    const menuItems1 = [
+  const menuItems1 = [
     { id: "home1", label: "Home", icon: Home, href: "/" },
     { id: "about1", label: "About Me", icon: User, href: "#about" },
     { id: "skills1", label: "Skills", icon: Code, href: "#skills" },
@@ -52,7 +52,12 @@ const Navbar = () => {
     <>
       <div className={`fixed z-50 w-full transition-all duration-300 ${scrolled ? 'pt-2' : 'pt-4'}`}>
         <nav className={`mx-auto lg:relative max-w-7xl px-4 md:px-6 transition-all duration-300`}>
-          <div className={`flex  lg:py-3 items-center justify-between rounded-3xl bg-gradient-to-r from-black via-black to-purple-500 shadow-2xl ${scrolled ? 'shadow-purple-500/20' : 'shadow-black'} px-4 md:px-6  backdrop-blur-sm border border-purple-500/20`}>
+          <div className={`flex  lg:py-3 items-center justify-between rounded-3xl  bg-gradient-to-r from-black via-black to-purple-700  ${scrolled ? 'shadow-purple-500/20' : 'shadow-black'} px-4 md:px-6  backdrop-blur-sm border border-purple-500/20`}
+            style={{
+              boxShadow: "0 5px 70px -12px rgba(192, 38, 211, 0.7)", // fuchsia-700 color, top-heavy shadow
+             
+            }}
+          >
 
             {/* Logo with glow effect */}
             <div className="flex items-center gap-2 group">
@@ -75,7 +80,7 @@ const Navbar = () => {
                     key={item.id}
                     href={item.href}
                     onClick={(e) => handleNavClick(e, item.href, item.id)}
-                    className="group relative px-4 text-white text-[16px] lg:text-[18px] font-medium transition-all duration-300 hover:text-purple-300"
+                    className="group relative px-4 text-white text-[16px]  lg:text-[15px] font-medium transition-all duration-300 hover:text-purple-300"
                   >
                     <div className="flex items-center gap-2">
                       <div className="relative">
