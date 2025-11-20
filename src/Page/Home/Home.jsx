@@ -530,9 +530,19 @@ const sendEmail = (e) => {
             </p>
             <div className="flex gap-5  items-center justify-center mt-6">
              <a href="/FAHMIDA NIMRA Resume-MERN Stack Developer.pdf" download="FAHMIDA NIMRA Resume-MERN Stack Developer-fahmidanimra@gmail.pdf">
-                 <button className="btnResume">Resume</button>
-            </a>
-              <button onClick={scrollToContact1} className="btnResume text-sm px-5 py-2">Contact Me</button>
+                  <button class="frutiger-button">
+                    <div class="inner">
+                      <div class="top-white"></div>
+                      <span class="text tracking-widest">Hire Me</span>
+                    </div>
+                  </button>
+                  </a>
+                  <button onClick={scrollToContact1} class="frutiger-button">
+                    <div class="inner">
+                      <div class="top-white"></div>
+                      <span class="text">Contact Me</span>
+                    </div>
+                  </button>
             </div>
           </div>
         </div>
