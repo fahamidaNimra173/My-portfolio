@@ -200,7 +200,7 @@ const sendEmail = (e) => {
             </div>
 
 
-            <BackgroundBeamsWithCollision>
+            {/* <BackgroundBeamsWithCollision> */}
                           <div>
           {/* <h1 className="text-4xl font-bold p-5 lg:pr-15 text-[#d633ff] kaushan md:text-left text-center">
             Painting the Web with Code and Color
@@ -230,7 +230,7 @@ const sendEmail = (e) => {
 
           </div>
           </div>
-            </BackgroundBeamsWithCollision>
+            {/* </BackgroundBeamsWithCollision> */}
 
 
           <section id='about'>
@@ -509,7 +509,7 @@ const sendEmail = (e) => {
         
             <div className="absolute  h-40 w-72 blur-3xl top-5 left-60  -z-10 bg-fuchsia-700 ">
             </div>
-           <BackgroundBeamsWithCollision>
+           {/* <BackgroundBeamsWithCollision> */}
                     <div className="flex flex-col-reverse gap-5  items-center">
           {/* Sidebar + intro */}
   
@@ -546,7 +546,7 @@ const sendEmail = (e) => {
             </div>
           </div>
         </div>
-          </BackgroundBeamsWithCollision>
+          {/* </BackgroundBeamsWithCollision> */}
 
 
         {/* Rest of the content below */}
