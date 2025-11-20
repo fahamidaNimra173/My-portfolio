@@ -215,10 +215,19 @@ const sendEmail = (e) => {
             devices.
           </p>
           <div className="flex gap-10 p-5 lg:pr-15 justify-center items-center">
-            <a href="/FAHMIDA NIMRA Resume-MERN Stack Developer.pdf" download="FAHMIDA NIMRA Resume-MERN Stack Developer-fahmidanimra@gmail.pdf">
-                 <button className="btnResume">Resume</button>
-            </a>
-            <button onClick={scrollToContact} className="btnResume">Contact Me</button>
+                  <button class="frutiger-button">
+                    <div class="inner">
+                      <div class="top-white"></div>
+                      <span class="text tracking-widest">Hire Me</span>
+                    </div>
+                  </button>
+                  <button onClick={scrollToContact} class="frutiger-button">
+                    <div class="inner">
+                      <div class="top-white"></div>
+                      <span class="text">Contact Me</span>
+                    </div>
+                  </button>
+
           </div>
           </div>
             </BackgroundBeamsWithCollision>
