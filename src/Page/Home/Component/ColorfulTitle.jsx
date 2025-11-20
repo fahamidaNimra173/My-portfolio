@@ -6,9 +6,7 @@ import {ColourfulText} from "../../../components/ui/colourful-text";
 export default function ColourfulTextDemo() {
     return (
         <div className="relative">
-            <div className="absolute h-56 w-72 blur-3xl -top-20 left-40 -z-10 bg-fuchsia-700 ">
-
-            </div>
+        
 
             <h1
                 className="text-[17px] shadow-2xl shadow-fuchsia-400  tracking-wide border-1 w-96 mx-auto font-bold px-5 py-1 rounded-full text-[#d633ff] kaushan  text-center">
