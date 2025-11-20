@@ -194,9 +194,9 @@ const sendEmail = (e) => {
       
           
        
-        <div className="flex-1 relative pl-3 pt-30 lg:pt-50 space-y-9 max-h-screen overflow-y-auto">
+        <div className="flex-1 relative pl-3 pt-30 lg:pt-25 space-y-9 max-h-screen overflow-y-auto">
 
-            <div className="absolute h-56 w-72 blur-3xl -top-20 left-40 -z-10 bg-fuchsia-700 ">
+            <div className="absolute h-40 w-96 blur-3xl top-5 left-80 -z-10 bg-fuchsia-700 ">
             </div>
 
 
