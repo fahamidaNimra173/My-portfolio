@@ -14,8 +14,7 @@ import {
   FaCss3Alt,
   FaReact,
   FaNodeJs,
-  FaGitAlt,
-  FaDatabase,
+
 } from "react-icons/fa";
 import {
   SiTailwindcss,
@@ -45,6 +44,7 @@ import SparklesPreview from "./Component/EducationAnimation";
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 import { CometCard } from "@/components/ui/comet-card";
 import ColourfulTextDemo from "./Component/ColorfulTitle";
+import IntroductionCard from "./Component/IntroductionCard";
 
 
 
@@ -179,71 +179,25 @@ const sendEmail = (e) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once:  false });
   return (
-    <div className="min-h-screen scroll-smooth">
+    <div className="min-h-screen  scroll-smooth">
+        
       {/* Large devices: flex row with sticky sidebar and main content */}
-      <div className="hidden md:flex md:flex-row gap-10 md:gap-5 items-start min-h-screen">
+      <div className="hidden  md:flex md:flex-row gap-10 md:gap-5 items-start min-h-screen">
         {/* Sidebar */}
+        
         <div
           className=" bg-black sticky top-0 min-h-screen shadow-fuchsia-400 patterned-bg shadow-2xl text-center md:px-10 px-3 py-15 lg:px-20 md:py-20 flex-shrink
           "
         >
-          <div className="glass-container sticky top-20 space-y-2 border-2 px-3 py-5 rounded-2xl">
-            <img
-              className="profile-img mx-auto rounded-2xl  object-contain"
-              src="https://i.ibb.co.com/whP4sbkf/my-Image-Bg-Blur.jpg"
-              alt="Fahmida Nimra"
-            />
-            <h1 className="text-white dark:text-white libertinus text-2xl mt-5 mb-2">Fahmida Nimra</h1>
-            <h1 className="text-white dark:text-white alice">Mern Stack Developer | Front End Developer</h1>
-            <h1 className="text-white dark:text-white alice">Chittagong, Bangladesh</h1>
-            <h1 className="text-white dark:text-white alice text-wrap">Email: fahmidanimra@gmail.com</h1>
-           <h1 className="text-white dark:text-white alice text-wrap">
-            Contact no:{" "}
-            <a href="tel:+8801568029731" className="hover:underline text-[#e283f9]">
-              +8801568029731
-            </a>
-            </h1>
-          
-               {/* Social Links */}
-      <div className="flex justify-center gap-4 mt-3">
-        <a
-          href="https://www.facebook.com/fahmida.nimra"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-white hover:text-[#1877F2] transition"
-        >
-          <FaFacebookF size={22} />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/fahmida-nimra/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-white hover:text-[#0A66C2] transition"
-        >
-          <FaLinkedinIn size={22} />
-        </a>
-        <a
-          href="https://github.com/fahamidaNimra173"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-white hover:text-gray-300 transition"
-        >
-          <FaGithub size={22} />
-        </a>
-      </div>
-          </div>
+
+        <IntroductionCard></IntroductionCard>
         </div>
 
         {/* Main Content */}
       
           
        
-        <div
-          className="
-            flex-1
-            pl-3 pt-30 lg:pt-50 space-y-9 
-            max-h-screen overflow-y-auto
-          "
+        <div className="flex-1 pl-3 pt-30 lg:pt-50 space-y-9 max-h-screen overflow-y-auto"
         >
             <BackgroundBeamsWithCollision>
                           <div>
@@ -541,62 +495,18 @@ const sendEmail = (e) => {
       </div>
 
       {/* Small devices: Sidebar + intro in flex container, rest content outside */}
-      <div className="md:hidden  pt-35 space-y-6">
+      <div className="md:hidden  pt-25 space-y-6">
            <BackgroundBeamsWithCollision>
                     <div className="flex flex-col-reverse gap-5  items-center">
           {/* Sidebar + intro */}
   
-          <div className="bg-black p-5 mt-10 shadow-2xl patterned-bg  shadow-black text-center px-3 py-6 rounded-lg flex-shrink-0 ">
-            <div className="glass-container space-y-2 border-2 px-3 py-5 rounded-2xl">
-              <img
-                className="profile-img mx-auto rounded-2xl "
-                src="https://i.ibb.co.com/whP4sbkf/my-Image-Bg-Blur.jpg"
-                alt="Fahmida Nimra"
-              />
-              <h1 className="libertinus text-lg mt-3 text-white dark:text-white mb-1">Fahmida Nimra</h1>
-              <h1 className=" text-white dark:text-white alice text-sm">
-                Mern Stack Developer | Front End Developer
-              </h1>
-              <h1 className="text-white dark:text-white alice text-sm">Chittagong, Bangladesh</h1>
-              <h1 className="text-white dark:text-white alice text-sm">fahmidanimra@gmail.com</h1>
-               <h1 className="text-white dark:text-white alice text-wrap">
-            Contact no:{" "}
-            <a href="tel:+8801568029731" className="hover:underline text-[#e283f9]">
-              +8801568029731
-            </a>
-            </h1>
+          <IntroductionCard></IntroductionCard>
 
-                    <div className="flex justify-center gap-4 mt-3">
-        <a
-          href="https://www.facebook.com/fahmida.nimra"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-white hover:text-[#1877F2] transition"
-        >
-          <FaFacebookF size={22} />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/fahmida-nimra/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-white hover:text-[#0A66C2] transition"
-        >
-          <FaLinkedinIn size={22} />
-        </a>
-        <a
-          href="https://github.com/fahamidaNimra173"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-white hover:text-gray-300 transition"
-        >
-          <FaGithub size={22} />
-        </a>
-      </div>
+          <div className="flex-1  px-5 text-center">
+            <div>
+                 <ColourfulTextDemo></ColourfulTextDemo>
             </div>
-          </div>
-
-          <div className="flex-1 px-5 text-center">
-          <ColourfulTextDemo></ColourfulTextDemo>
+         
             <p className="text-[16px] text-white dark:text-white font-medium alice mt-2">
               Combining artistic passion with technical skill, I create dynamic,
               user-friendly websites that bring ideas to life with clarity and

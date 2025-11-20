@@ -55,7 +55,7 @@ const Navbar = () => {
           <div className={`flex  lg:py-3 items-center justify-between rounded-3xl  bg-gradient-to-r from-black via-black to-purple-700  ${scrolled ? 'shadow-purple-500/20' : 'shadow-black'} px-4 md:px-6  backdrop-blur-sm border border-purple-500/20`}
             style={{
               boxShadow: "0 5px 70px -12px rgba(192, 38, 211, 0.7)", // fuchsia-700 color, top-heavy shadow
-             
+
             }}
           >
 
@@ -111,7 +111,14 @@ const Navbar = () => {
               {/* Resume Button - Desktop */}
               <div className="hidden md:block">
                 <a href="/FAHMIDA NIMRA Resume-MERN Stack Developer.pdf" download="FAHMIDA NIMRA Resume-MERN Stack Developer-fahmidanimra@gmail.com.pdf">
-                  <button className="btnResume">Resume</button>
+
+                  <button class="frutiger-button">
+                    <div class="inner">
+                      <div class="top-white"></div>
+                      <span class="text">Resume</span>
+                    </div>
+                  </button>
+
                 </a>
               </div>
 
@@ -207,14 +214,16 @@ const Navbar = () => {
           <a
             href="/FAHMIDA NIMRA Resume-MERN Stack Developer.pdf"
             download="FAHMIDA NIMRA Resume-MERN Stack Developer-fahmidanimra@gmail.com.pdf"
-            className="group flex items-center gap-4 px-5 py-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-pink-600 hover:to-purple-600 rounded-xl transition-all duration-300 relative overflow-hidden shadow-lg hover:shadow-purple-500/50 hover:scale-105 active:scale-95"
+            
             onClick={() => setSidebarOpen(false)}
           >
-            <FileDown size={22} className="text-white relative z-10 transition-transform duration-300 group-hover:translate-y-1" />
-            <span className="text-[18px] font-semibold text-white relative z-10">Download Resume</span>
-
-            {/* Shimmer effect */}
-            <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
+            
+            <button class="frutiger-button">
+              <div class="inner">
+                <div class="top-white"></div>
+                <span class="text flex gap-2"><FileDown size={22} className="text-white relative z-10 transition-transform duration-300 group-hover:translate-y-1" />Resume</span>
+              </div>
+            </button>
           </a>
         </nav>
 

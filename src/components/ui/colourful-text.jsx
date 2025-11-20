@@ -11,10 +11,10 @@ export function ColourfulText({
     "rgb(42, 169, 210)",
     "rgb(4, 112, 202)",
     "rgb(107, 10, 255)",
-    "rgb(183, 0, 218)",
+    "rgb(255, 255, 255)",
     "rgb(218, 0, 171)",
     "rgb(230, 64, 92)",
-    "rgb(232, 98, 63)",
+    "rgb(25, 255, 255)",
     "rgb(249, 129, 47)",
   ];
 
@@ -48,7 +48,7 @@ export function ColourfulText({
         duration: 0.5,
         delay: index * 0.05,
       }}
-      className="inline-block whitespace-pre kaushan  tracking-tight">
+      className="inline-block whitespace-pre kaushan  tracking-wider">
       {char}
     </motion.span>
   ));
