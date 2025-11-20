@@ -197,8 +197,12 @@ const sendEmail = (e) => {
       
           
        
-        <div className="flex-1 pl-3 pt-30 lg:pt-50 space-y-9 max-h-screen overflow-y-auto"
-        >
+        <div className="flex-1 relative pl-3 pt-30 lg:pt-50 space-y-9 max-h-screen overflow-y-auto">
+
+            <div className="absolute h-56 w-72 blur-3xl -top-20 left-40 -z-10 bg-fuchsia-700 ">
+            </div>
+
+
             <BackgroundBeamsWithCollision>
                           <div>
           {/* <h1 className="text-4xl font-bold p-5 lg:pr-15 text-[#d633ff] kaushan md:text-left text-center">
@@ -495,7 +499,10 @@ const sendEmail = (e) => {
       </div>
 
       {/* Small devices: Sidebar + intro in flex container, rest content outside */}
-      <div className="md:hidden  pt-25 space-y-6">
+      <div className="md:hidden relative  pt-25 space-y-6">
+        
+            <div className="absolute  h-40 w-72 blur-3xl top-5 left-60  -z-10 bg-fuchsia-700 ">
+            </div>
            <BackgroundBeamsWithCollision>
                     <div className="flex flex-col-reverse gap-5  items-center">
           {/* Sidebar + intro */}
