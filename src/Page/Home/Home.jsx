@@ -161,8 +161,6 @@ const sendEmail = (e) => {
   },
 ];
 
-
-
   const skillsRef = useRef(null);
   const skillsInView = useInView(skillsRef, { once: true, rootMargin: "-100px" });
 
@@ -302,7 +300,8 @@ const sendEmail = (e) => {
 
     </div>
     <section id='project' className='p-5 '>
-      {/* <ProjectCard></ProjectCard> */}
+
+      <ProjectCard></ProjectCard>
     </section>
 
 
