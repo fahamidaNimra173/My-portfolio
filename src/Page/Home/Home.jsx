@@ -510,7 +510,7 @@ const sendEmail = (e) => {
             <div className="absolute  h-40 w-72 blur-3xl top-5 left-60  -z-10 bg-fuchsia-700 ">
             </div>
            {/* <BackgroundBeamsWithCollision> */}
-                    <div className="flex flex-col-reverse gap-5  items-center">
+            <div className="flex flex-col-reverse gap-5  items-center">
           {/* Sidebar + intro */}
   
           <IntroductionCard></IntroductionCard>
@@ -658,84 +658,40 @@ const sendEmail = (e) => {
       </div>
 
     </section>
-    {/* eduction section */}
- 
- 
- 
-    {/* <section id='education1'>
-         <div className='z-100 p-5 md:hidden my-20 '>
-    <section className="max-w-xl shadow-2xl  mx-auto p-6  rounded-lg  text-white dark:text-white ">
-      <h2 className="text-3xl font-bold mb-8 text-white dark:text-white text-center">Educational Milestones</h2>
-
-      <div className="relative border-l-3 border-purple-100 pl-6">
-       
-        <div className="mb-8 ml-4">
-  
-          <div className="absolute -left-3 top-2 w-6 h-6 bg-purple-600 rounded-full border-4 border-white"></div>
-
-          <h3 className="text-xl font-semibold">BSc in Computer Science & Engineering (CSE)</h3>
-          <p className="text-white font-medium dark:text-white">Port City International University</p>
-          <p className="text-white font-medium dark:text-white">CGPA: 3.48</p>
-          <p className="text-white font-medium dark:text-white">Graduated: 2024</p>
-        </div>
-      </div>
-    </section>
-    
-    </div>
-
-
-
-
     
 
 
-    </section> */}
+    <div class="card  my-35 ">
+                <div class="content">
+                    <div class="back">
+                        <div class="back-content">
+                            <section id="education1" class="p-2 w-full rounded-lg text-purple-100 flex flex-col gap-3 items-center justify-center">
 
+                                <div class="relative shadow-[0_0_25px_6px_rgba(168,85,247,0.7),inset_0_0_25px_7px_rgba(168,85,247,0.8)] rounded-b-xl p-10 border-1 border-purple-600 rounded-3xl">
+                                    <div class=" flex flex-col items-center gap-7 py-12">
+                                        <PiStudentFill className="text-purple-400 h-16 w-25"></PiStudentFill>
 
-<div class="card  my-35 ">
-  <div class="content">
-  
-
-    {/* <div class="wave1"></div>
-    <div class="wave1"></div>
-    <div class="wave1"></div> */}
-
-    
-    <div class="back">
-      <div class="back-content">
-        <section
-          id="education1"
-          class="p-2 w-full rounded-lg text-purple-100 flex flex-col gap-3 items-center justify-center"
-        >
-
-
-          <div class="relative 
-                        shadow-[0_0_25px_6px_rgba(168,85,247,0.7),inset_0_0_25px_7px_rgba(168,85,247,0.8)]
-                        rounded-b-xl p-10 border-1 border-purple-600 rounded-3xl">
-            <div class=" flex flex-col items-center gap-7 py-12">
-             <PiStudentFill className="text-purple-400 h-16 w-25"></PiStudentFill>
-
-              <div className="flex flex-col items-center justify-center text-center gap-3">
-                <h3 class="text-xl font-semibold">
-                BSc in Computer Science & Engineering (CSE)
-              </h3>
-              <p class="font-medium">
-                Port City International University
-              </p>
-              <p class="font-medium">CGPA: 3.48</p>
-              <p class="font-medium">Graduated: 2024</p>
-              </div>
+                                        <div className="flex flex-col items-center justify-center text-center gap-3">
+                                            <h3 class="text-xl font-semibold">
+                                                BSc in Computer Science & Engineering (CSE)
+                                            </h3>
+                                            <p class="font-medium">
+                                                Port City International University
+                                            </p>
+                                            <p class="font-medium">CGPA: 3.48</p>
+                                            <p class="font-medium">Graduated: 2024</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 class="text-3xl lg:text-5xl font-bold mb-2  pl-7 text-center">
+                                    Educational<br></br>
+                                    <SparklesPreview></SparklesPreview>
+                                </h2>
+                            </section>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-            <h2 class="text-3xl lg:text-5xl font-bold mb-2  pl-7 text-center">
-            Educational<br></br>
-            <SparklesPreview></SparklesPreview>
-          </h2>
-        </section>
-      </div>
-    </div>
-  </div>
-</div>
 
 
 
