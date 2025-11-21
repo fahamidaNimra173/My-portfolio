@@ -45,6 +45,7 @@ import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-w
 import { CometCard } from "@/components/ui/comet-card";
 import ColourfulTextDemo from "./Component/ColorfulTitle";
 import IntroductionCard from "./Component/IntroductionCard";
+import Greetings from "./Component/Greetings";
 
 
 
@@ -519,6 +520,7 @@ const sendEmail = (e) => {
             <div>
                  <ColourfulTextDemo></ColourfulTextDemo>
             </div>
+            <Greetings></Greetings>
          
             <p className="text-[16px] text-white dark:text-white font-medium alice mt-2">
               Combining artistic passion with technical skill, I create dynamic,
