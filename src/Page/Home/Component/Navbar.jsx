@@ -128,7 +128,7 @@ const Navbar = () => {
                 className="md:hidden p-2.5 hover:bg-purple-600/30 rounded-xl transition-all duration-300 hover:scale-110 active:scale-95 group"
                 aria-label="Open menu"
               >
-                <FaBars size={22} className="transition-transform duration-300 group-hover:rotate-90" />
+                <FaBars size={22} className="transition-transform text-purple-100 duration-300 group-hover:rotate-90" />
               </button>
             </div>
           </div>

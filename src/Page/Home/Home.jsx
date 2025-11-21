@@ -176,9 +176,9 @@ const sendEmail = (e) => {
   const skillsInView = useInView(skillsRef, { once: true, rootMargin: "-100px" });
 
 
-    const text = 'About Me';
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once:  false });
+    
+ 
+  
   return (
     <div className="min-h-screen  scroll-smooth">
         
@@ -196,25 +196,11 @@ const sendEmail = (e) => {
           
        
         <div className="flex-1 relative pl-3 pt-30 lg:pt-25 space-y-9 max-h-screen overflow-y-auto">
-
             <div className="absolute h-40 w-96 blur-3xl top-5 left-80 -z-10 bg-fuchsia-700 ">
-            </div>
-
-
-            {/* <BackgroundBeamsWithCollision> */}
-                          <div>
-          {/* <h1 className="text-4xl font-bold p-5 lg:pr-15 text-[#d633ff] kaushan md:text-left text-center">
-            Painting the Web with Code and Color
-          </h1> */}
+            </div>     
+          <div>
           <ColourfulTextDemo></ColourfulTextDemo>
-          <p className="text-[20px] text-white p-5 lg:pr-15 dark:text-white font-medium alice">
-            Combining artistic passion with technical skill, I create dynamic,
-            user-friendly websites that bring ideas to life with clarity and
-            purpose. Leveraging modern technologies like React, Tailwind CSS,
-            and Node.js, I build scalable, responsive, and high-performance
-            digital solutions that deliver seamless user experiences across
-            devices.
-          </p>
+         <Greetings></Greetings> 
           <div className="flex gap-10 p-5 lg:pr-15 justify-center items-center">
                   <button class="frutiger-button">
                     <div class="inner">
@@ -229,9 +215,9 @@ const sendEmail = (e) => {
                     </div>
                   </button>
 
+          </div> 
           </div>
-          </div>
-            {/* </BackgroundBeamsWithCollision> */}
+          
 
 
           <section id='about'>
@@ -268,15 +254,9 @@ const sendEmail = (e) => {
 
     <section id='skills' className=" p-5 lg:pr-15">
       <div className="max-w-5xl mx-auto">
-        <h2
-          className="
-          text-5xl max-w-3xl  text-wrap font-extrabold text-center elsie  mb-12
-    bg-gradient-to-r from-[#ffffff]  via-[#ffffff] to-[#d428ff] 
-    bg-clip-text text-transparent
-          "
-        >
-          Professional Skill Set
-        </h2>
+        <h2 className="text-5xl max-w-3xl  text-wrap font-extrabold text-center elsie  mb-12 bg-gradient-to-r from-[#ffffff]  via-[#ffffff] to-[#d428ff] 
+    bg-clip-text text-transparent">
+          Professional Skill Set</h2>
 
         <div className="space-y-12">
           {skillsData.map((section, index) => (
@@ -327,16 +307,7 @@ const sendEmail = (e) => {
             Educational<br></br>
             <span ><SparklesPreview></SparklesPreview> </span>
           </h2>
-          {/* <CometCard>
-            <button
-             className="my-10 flex  cursor-pointer flex-col items-stretch  border-0 bg-[#000000]   md:my-20 md:p-4"
-        aria-label="View invite F7RA"
-        style={{
-          transformStyle: "preserve-3d",
-          transform: "none",
-          opacity: 1,
-        }}
-        > */}
+          
           <div class="relative 
                         shadow-[0_0_25px_6px_rgba(168,85,247,0.7),inset_0_0_20px_10px_rgba(168,85,247,0.8)]
                         rounded-b-xl p-10 border-1 border-purple-600 rounded-3xl">
@@ -522,14 +493,7 @@ const sendEmail = (e) => {
             </div>
             <Greetings></Greetings>
          
-            <p className="text-[16px]  text-white dark:text-white font-medium alice mt-2">
-              Combining artistic passion with technical skill, I create dynamic,
-              user-friendly websites that bring ideas to life with clarity and
-              purpose. Leveraging modern technologies like React, Tailwind CSS,
-              and Node.js, I build scalable, responsive, and high-performance
-              digital solutions that deliver seamless user experiences across
-              devices.
-            </p>
+
             <div className="flex gap-5  items-center justify-center mt-6">
              <a href="/FAHMIDA NIMRA Resume-MERN Stack Developer.pdf" download="FAHMIDA NIMRA Resume-MERN Stack Developer-fahmidanimra@gmail.pdf">
                   <button class="frutiger-button">
@@ -553,73 +517,33 @@ const sendEmail = (e) => {
 
         {/* Rest of the content below */}
 
-        <section id='about1'>
-                      <div className="p-5 my-20 ">
-            <h1
-      ref={ref}
-      className="text-white mb-5 dark:text-white text-4xl elsie font-bold flex flex-wrap justify-center"
-      aria-label={text}
-    >
-      {text.split('').map((char, i) => {
-        const isColored = i >= 6; // color "Me" part
-        return (
-          <motion.span
-            key={i}
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: i * 0.1 }}
-            className={isColored ? 'text-[#e283f9]' : ''}
-            style={{ display: 'inline-block' }}
-          >
-            {char === ' ' ? '\u00A0' : char}
-          </motion.span>
-        );
-      })}
-    </h1>
-          {/* <p className="text-white dark:text-white alice text-[20px]">
-            I’m a MERN stack developer fueled by a passion for vibrant design and
-            seamless functionality. From childhood, blending colors and crafting
-            art sparked my creativity — a foundation that now drives my web
-            development journey. Coding felt intimidating at first during
-            university, but in my final year, discovering Python and working on
-            my thesis sparked my true passion for programming. During that time,
-            I also explored web development and instantly fell in love with
-            building dynamic, interactive websites.
-          </p>
-          <p className="text-white dark:text-white alice text-[20px]">
-            I love exploring UI libraries and creating smooth animations with
-            tools like Framer Motion. Turning ideas into interactive, visually
-            stunning websites using React and Tailwind excites me. On the
-            backend, I work with Express.js and MongoDB to build efficient,
-            data-driven applications.
-          </p>
-          <p className="text-white dark:text-white alice  text-[20px]">
-            When I’m not coding, I enjoy watching movies and series, and I like
-            designing banners and logos using Canva. I’m focused, driven, and
-            don’t let negativity distract me. I believe in staying true to
-            myself and creating meaningful, user-friendly, SEO-friendly projects
-            that leave a lasting impact.
-          </p> */}
-
-            <div className="flex flex-col items-center justify-center">
-        <p className="text-white text-center dark:text-white alice text-[20px]">
-          {showMore ? text1 : `${text1.slice(0, 200)}...`}
-        </p>
-        <p className="text-white text-center dark:text-white alice text-[20px] mt-2">
-          {showMore ? text2 : `${text2.slice(0, 200)}...`}
-        </p>
-
-        <button
-          onClick={handleToggle}
-          className="mt-5 btnResume  "
-        >
-          {showMore ? "See Less" : "See More"}
-        </button>
-            </div>
+            <section id="about1">
+              <div className="p-5 my-20">
+                {/* Header without animation */}
+                <h1
+                  className="text-white mb-5 dark:text-white text-4xl elsie font-bold flex  justify-center text-center">
+             
+              About <span className="text-[#e283f9] ml-5">Me</span>
+                </h1>
+            
+                {/* About paragraphs */}
+                <div className="flex flex-col items-center justify-center">
+                  <p className="text-white text-center dark:text-white alice text-[20px]">
+                    {showMore ? text1 : `${text1.slice(0, 200)}...`}
+                  </p>
+                  <p className="text-white text-center dark:text-white alice text-[20px] mt-2">
+                    {showMore ? text2 : `${text2.slice(0, 200)}...`}
+                  </p>
+            
+                  {/* Toggle button */}
+                  <button onClick={handleToggle} className="mt-5 btnResume">
+                    {showMore ? "See Less" : "See More"}
+                  </button>
+                </div>
+              </div>
+            </section>
 
 
-        </div>
-        </section>
 
             <section id='skills1' ref={skillsRef} className=" p-5 md:hidden ">
       <div className="max-w-5xl mx-auto">
@@ -667,7 +591,7 @@ const sendEmail = (e) => {
                 <div class="content">
                     <div class="back">
                         <div class="back-content">
-                            <section id="education1" class="p-2 w-full rounded-lg text-purple-100 flex flex-col gap-3 items-center justify-center">
+                            {/* <section id="education1" class="p-2 w-full rounded-lg text-purple-100 flex flex-col gap-3 items-center justify-center">
 
                                 <div class="relative shadow-[0_0_25px_6px_rgba(168,85,247,0.7),inset_0_0_25px_7px_rgba(168,85,247,0.8)] rounded-b-xl p-10 border-1 border-purple-600 rounded-3xl">
                                     <div class=" flex flex-col items-center gap-7 py-12">
@@ -689,7 +613,7 @@ const sendEmail = (e) => {
                                     Educational<br></br>
                                     <SparklesPreview></SparklesPreview>
                                 </h2>
-                            </section>
+                            </section> */}
                         </div>
                     </div>
                 </div>

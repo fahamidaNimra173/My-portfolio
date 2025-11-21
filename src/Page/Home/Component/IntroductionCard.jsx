@@ -5,8 +5,8 @@ import { FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/fa";
 export default function IntroductionCard() {
     return (
         <div className="relative">
-            <div className="absolute animate-spin  h-72  w-96 blur-3xl top-15 left-80 -z-10 bg-gradient-to-b from-purple-500  to-fuchsia-700 opacity-70"
-                style={{ animationDuration: '15s' }}
+            <div className="absolute  h-72  w-96 blur-3xl top-15 left-80 -z-10 bg-gradient-to-b from-purple-500  to-fuchsia-700 opacity-70"
+                 style={{ animationDuration: '15s' }}
             >
             </div>
             <div className="absolute animate-spin  h-72  w-80 blur-3xl -top-10 -left-90 -z-10 bg-gradient-to-b from-purple-700  to-fuchsia-700 opacity-70"
