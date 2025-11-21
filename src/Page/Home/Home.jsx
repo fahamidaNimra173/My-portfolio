@@ -522,7 +522,7 @@ const sendEmail = (e) => {
             </div>
             <Greetings></Greetings>
          
-            <p className="text-[16px] text-white dark:text-white font-medium alice mt-2">
+            <p className="text-[16px]  text-white dark:text-white font-medium alice mt-2">
               Combining artistic passion with technical skill, I create dynamic,
               user-friendly websites that bring ideas to life with clarity and
               purpose. Leveraging modern technologies like React, Tailwind CSS,
