@@ -25,17 +25,29 @@ export default function AboutMe() {
 
             {/* About paragraphs */}
             <div className="flex flex-col items-center justify-center">
-                <p className="text-white text-center dark:text-white alice text-[20px]">
+                <p className="text-white md:hidden block text-center dark:text-white alice text-[20px]">
                     {showMore ? text1 : `${text1.slice(0, 200)}...`}
                 </p>
-                <p className="text-white text-center dark:text-white alice text-[20px] mt-2">
+                {/* Showing first part fully for larger device */}
+                <p className="text-white hidden md:block text-center dark:text-white alice text-[20px]">
+                    { text1 }
+                </p>
+                <p className="text-white md:hidden block text-center dark:text-white alice text-[20px] mt-2">
                     {showMore ? text2 : `${text2.slice(0, 200)}...`}
+                </p>
+                {/* Showing second part fully for larger device */}
+                <p className="text-white md:block hidden text-center dark:text-white alice text-[20px] mt-2">
+                      { text2 }
                 </p>
 
                 {/* Toggle button */}
-                <button onClick={handleToggle} className="mt-5 btnResume">
-                    {showMore ? "See Less" : "See More"}
-                </button>
+
+                 <button onClick={handleToggle} class="mt-5 md:hidden block frutiger-button">
+                    <div class="inner">
+                      <div class="top-white"></div>
+                      <span class="text">{showMore ? "See Less" : "See More"}</span>
+                    </div>
+                  </button>
             </div>
         </div>
     )

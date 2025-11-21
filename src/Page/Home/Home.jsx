@@ -209,37 +209,7 @@ const sendEmail = (e) => {
           </div> 
           </div>
           
-
-
-          <section id='about'>
-                 <div className=' p-5 lg:pr-15 md:my-20  space-y-5'>
-            <h1 className="text-white dark:text-white text-4xl elsie text-center">About <span className='text-[#e787ff]'>Me</span> </h1>
-        <p className="text-white dark:text-white alice text-[20px]">
-            I’m a MERN stack developer fueled by a passion for vibrant design and
-            seamless functionality. From childhood, blending colors and crafting
-            art sparked my creativity — a foundation that now drives my web
-            development journey. Coding felt intimidating at first during
-            university, but in my final year, discovering Python and working on
-            my thesis sparked my true passion for programming. During that time,
-            I also explored web development and instantly fell in love with
-            building dynamic, interactive websites.
-          </p>
-          <p className="text-white dark:text-white alice text-[20px]">
-            I love exploring UI libraries and creating smooth animations with
-            tools like Framer Motion. Turning ideas into interactive, visually
-            stunning websites using React and Tailwind excites me. On the
-            backend, I work with Express.js and MongoDB to build efficient,
-            data-driven applications.
-          </p>
-          <p className="text-white dark:text-white alice  text-[20px]">
-            When I’m not coding, I enjoy watching movies and series, and I like
-            designing banners and logos using Canva. I’m focused, driven, and
-            don’t let negativity distract me. I believe in staying true to
-            myself and creating meaningful, user-friendly, SEO-friendly projects
-            that leave a lasting impact.
-          </p>
-          </div>
-          </section>
+          <AboutMe></AboutMe>
          
 
 
@@ -290,7 +260,7 @@ const sendEmail = (e) => {
     
     <div class="back bg-black">
       <div class="back-content">
-        <section
+        {/* <section
           id="education"
           class="p-6 w-full rounded-lg text-purple-100 flex flex-row gap-5 items-center justify-center"
         >
@@ -317,11 +287,10 @@ const sendEmail = (e) => {
               </div>
             </div>
           </div>
-            {/* </button>
-          </CometCard> */}
 
 
-        </section>
+
+        </section> */}
       </div>
     </div>
   </div>
@@ -333,7 +302,7 @@ const sendEmail = (e) => {
 
     </div>
     <section id='project' className='p-5 '>
-      <ProjectCard></ProjectCard>
+      {/* <ProjectCard></ProjectCard> */}
     </section>
 
 
@@ -372,13 +341,7 @@ const sendEmail = (e) => {
       </p>
 
 <div className="flex flex-row items-center justify-center gap-4">
-  {/* <a
-    href="mailto:fahmidanimra@gmail.com"
-    className="text-purple-200 hover:scale-110 transition-transform"
-  >
-    <MdEmail size={28} />
-  </a> */}
-
+ 
   <a
     href="https://www.linkedin.com/in/fahmida-nimra/"
     target="_blank"
@@ -505,24 +468,17 @@ const sendEmail = (e) => {
         </div>
           {/* </BackgroundBeamsWithCollision> */}
 
-
-        {/* Rest of the content below */}
-
-            <section id="about1">
-              <AboutMe></AboutMe>
-            </section>
+      <section id="about1">
+        <AboutMe></AboutMe>
+      </section>
 
 
 
-            <section id='skills1' ref={skillsRef} className=" p-5 md:hidden ">
+      <section id='skills1' ref={skillsRef} className=" p-5 md:hidden ">
       <div className="max-w-5xl mx-auto">
-       <h2
-  className=" text-5xl max-w-3xl  text-wrap font-extrabold text-center elsie  mb-12
-    bg-gradient-to-r from-[#ffffff]  via-[#ffffff] to-[#d428ff] 
-    bg-clip-text text-transparent"
->
-  Professional Skill Set
-</h2>
+       <h2 className=" text-5xl max-w-3xl  text-wrap font-extrabold text-center elsie  mb-12 bg-gradient-to-r from-[#ffffff]  via-[#ffffff] to-[#d428ff] bg-clip-text text-transparent">
+          Professional Skill Set
+       </h2>
 
         <div className="space-y-12">
           {skillsData.map((section, index) => (
