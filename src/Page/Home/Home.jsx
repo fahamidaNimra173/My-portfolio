@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Lottie from "lottie-react";
 
 import React, { useRef } from 'react';
-import { FaFacebookF, FaLinkedinIn, FaGithub,FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import {  FaGithub,FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { motion, useInView } from 'framer-motion';
 import {
   FaHtml5,
@@ -35,18 +35,17 @@ import {
   SiTypescript
 } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
-import { PiStudentFill, PiSunHorizonFill } from "react-icons/pi";
+import { PiSunHorizonFill } from "react-icons/pi";
 import { IoMdTime } from "react-icons/io";
 import emailjs from "emailjs-com";
 import ProjectCard from './Component/ProjectCard';
 
-import SparklesPreview from "./Component/EducationAnimation";
-import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
-import { CometCard } from "@/components/ui/comet-card";
+
 import ColourfulTextDemo from "./Component/ColorfulTitle";
 import IntroductionCard from "./Component/IntroductionCard";
 import Greetings from "./Component/Greetings";
 import AboutMe from "./Component/AboutMe";
+import ScrollVelocityDemo from "./Component/Services";
 
 
 
@@ -184,13 +183,13 @@ const sendEmail = (e) => {
       
           
        
-        <div className="flex-1 relative pl-3 pt-30 lg:pt-25 space-y-9 max-h-screen overflow-y-auto">
+        <div className="flex-1  relative pl-3 pt-30 lg:pt-25 space-y-9 max-h-screen overflow-y-auto">
             <div className="absolute h-40 w-96 blur-3xl top-5 left-80 -z-10 bg-fuchsia-700 ">
             </div>     
           <div>
           <ColourfulTextDemo></ColourfulTextDemo>
          <Greetings></Greetings> 
-          <div className="flex gap-10 p-5 lg:pr-15 justify-center items-center">
+          <div className="flex gap-10 lg:pr-15 justify-center items-center">
                   <button class="frutiger-button">
                     <div class="inner">
                       <div class="top-white"></div>
@@ -206,6 +205,7 @@ const sendEmail = (e) => {
 
           </div> 
           </div>
+            <ScrollVelocityDemo></ScrollVelocityDemo>
           
           <AboutMe></AboutMe>
          
@@ -243,11 +243,6 @@ const sendEmail = (e) => {
     </section>
       <div className='relative p-5 lg:pr-15 hidden md:block z-10 my-20 '>
     
-
-
-<div class="card e-card playing">
-  <div class="content">
-  
     {/* <div class="wave"></div>
     <div class="wave"></div>
     <div class="wave"></div>
@@ -255,10 +250,11 @@ const sendEmail = (e) => {
     <div class="wave1"></div>
     <div class="wave1"></div> */}
 
-    
+{/* <div class="card e-card playing">
+  <div class="content">
     <div class="back bg-black">
       <div class="back-content">
-        {/* <section
+        <section
           id="education"
           class="p-6 w-full rounded-lg text-purple-100 flex flex-row gap-5 items-center justify-center"
         >
@@ -288,11 +284,11 @@ const sendEmail = (e) => {
 
 
 
-        </section> */}
+        </section>
       </div>
     </div>
   </div>
-</div>
+</div> */}
 
 
 
@@ -465,6 +461,10 @@ const sendEmail = (e) => {
             </div>
           </div>
         </div>
+        <div >
+       <ScrollVelocityDemo></ScrollVelocityDemo>
+        </div>
+ 
           {/* </BackgroundBeamsWithCollision> */}
 
       <section id="about1">
@@ -490,7 +490,7 @@ const sendEmail = (e) => {
               <h3 className="text-2xl  text-white dark:text-white elsie font-semibold mb-6">
                 {section.title}
               </h3>
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5 lg:gap-6 gap-3">
+              <div className="grid grid-cols-3 lg:grid-cols-5 lg:gap-6 gap-3">
                 {section.skills.map((skill, i) => (
                   <div key={i} className="flex flex-col items-center flex-wrap skill-card">
                     <div className="button shadow-2xl  shadow-white rounded-[5px] patterned-bg h-35  flex flex-col items-center justify-center w-full py-4">

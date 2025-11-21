@@ -57,8 +57,7 @@ const ProjectCard = () => {
       </div>
 
       <h1 className="md:text-6xl md:my-19 my-5 text-4xl font-bold text-center elsie
-         bg-gradient-to-r from-[#ffffff]  via-[#f7fbb9] to-[#becb03 
-    bg-clip-text text-transparent">
+         bg-gradient-to-r from-[#ffffff]  via-[#f7fbb9] md:via-[#ffd5fc] to-[#becb03] md:to-[#f823ff] bg-clip-text text-transparent">
         My Projects
       </h1>
 

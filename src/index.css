@@ -3,6 +3,7 @@
 
 @custom-variant dark (&:is(.dark *));
 @plugin "daisyui";
+
 html {
   scroll-behavior: smooth;
 }

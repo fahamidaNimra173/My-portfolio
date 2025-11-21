@@ -4,7 +4,7 @@ import React from "react"
 
 export default function Greetings() {
     return (
-        <div className="my-10 md:my-15">
+        <div className="my-10 md:mt-15 mb-5">
             <h1 className="md:text-6xl alice lg:text-center  text-3xl text-wrap  font-bold">
                 <GradientText text="Greeting! I'm a" />
                 <RotatingText
