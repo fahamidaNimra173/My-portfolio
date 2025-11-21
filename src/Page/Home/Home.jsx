@@ -475,7 +475,7 @@ const sendEmail = (e) => {
 
       <section id='skills1' ref={skillsRef} className=" p-5 md:hidden ">
       <div className="max-w-5xl mx-auto">
-       <h2 className=" text-5xl max-w-3xl  text-wrap font-extrabold text-center elsie  mb-12 bg-gradient-to-r from-[#ffffff]  via-[#ffffff] to-[#d428ff] bg-clip-text text-transparent">
+       <h2 className=" text-3xl md:text-5xl max-w-3xl  text-wrap font-extrabold text-center elsie  mb-12 bg-gradient-to-r from-[#ffffff]  via-[#f7fbb9] to-[#becb03] bg-clip-text text-transparent">
           Professional Skill Set
        </h2>
 
