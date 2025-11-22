@@ -26,11 +26,11 @@ export const Timeline = ({ data }) => {
       className="w-full font-sans px-4 md:px-8 lg:px-12"
       ref={containerRef}>
       <div className="max-w-7xl mx-auto mb-12 md:mb-16">
-        <h2 className="text-3xl alice font-bold sm:text-4xl md:text-5xl lg:text-6xl mb-4 md:mb-6 text-purple-300 leading-tight">
+        <h2 className="text-3xl text-center lg:text-left alice font-bold sm:text-4xl md:text-5xl lg:text-6xl mb-4 md:mb-6 text-purple-300 leading-tight">
           Education <br />
           <span className="elsie text-yellow-500 inline-block lg:ml-15 mt-2">Milestone</span>
         </h2>
-        <p className="text-white/80 alice text-sm sm:text-base md:text-lg max-w-3xl">
+        <p className="text-white/80 alice text-center text-sm sm:text-base md:text-lg max-w-3xl">
           A brief overview of my academic journey, highlighting the key milestones
           from SSC to my Bachelor's degree in Computer Science and Engineering.
         </p>
@@ -40,7 +40,7 @@ export const Timeline = ({ data }) => {
         {data.map((item, index) => (
           <div 
             key={index} 
-            className="flex text-white justify-start pt-10 md:pt-16 lg:pt-20 gap-6 md:gap-8 lg:gap-10"
+            className="flex text-white justify-start pt-10 md:pt-16 lg:pt-20 gap-0 md:gap-8 lg:gap-10"
           >
             {/* Icon and Title Container */}
             <div className="sticky flex flex-col md:flex-row z-40 items-center top-20 md:top-24 self-start  ">

@@ -271,19 +271,10 @@ const sendEmail = (e) => {
     </div>
   </div>
 </div> */}
-        <section id="education" >
-          
+        <section id="education" >  
           <TimelineDemo></TimelineDemo>
-
-
-
         </section>
-
-
-
-
-
-    </div>
+  </div>
     <section id='project' className='p-5 '>
 
       <ProjectCard></ProjectCard>
@@ -427,7 +418,7 @@ const sendEmail = (e) => {
 
           <div className="flex-1  px-5 text-center">
             <div>
-                 <ColourfulTextDemo></ColourfulTextDemo>
+            <ColourfulTextDemo></ColourfulTextDemo>
             </div>
             <Greetings></Greetings>
          
@@ -500,37 +491,9 @@ const sendEmail = (e) => {
     
 
 
-    <div class="card  my-35 ">
-                <div class="content">
-                    <div class="back">
-                        <div class="back-content">
-                            {/* <section id="education1" class="p-2 w-full rounded-lg text-purple-100 flex flex-col gap-3 items-center justify-center">
-
-                                <div class="relative shadow-[0_0_25px_6px_rgba(168,85,247,0.7),inset_0_0_25px_7px_rgba(168,85,247,0.8)] rounded-b-xl p-10 border-1 border-purple-600 rounded-3xl">
-                                    <div class=" flex flex-col items-center gap-7 py-12">
-                                        <PiStudentFill className="text-purple-400 h-16 w-25"></PiStudentFill>
-
-                                        <div className="flex flex-col items-center justify-center text-center gap-3">
-                                            <h3 class="text-xl font-semibold">
-                                                BSc in Computer Science & Engineering (CSE)
-                                            </h3>
-                                            <p class="font-medium">
-                                                Port City International University
-                                            </p>
-                                            <p class="font-medium">CGPA: 3.48</p>
-                                            <p class="font-medium">Graduated: 2024</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <h2 class="text-3xl lg:text-5xl font-bold mb-2  pl-7 text-center">
-                                    Educational<br></br>
-                                    <SparklesPreview></SparklesPreview>
-                                </h2>
-                            </section> */}
-                        </div>
-                    </div>
-                </div>
-            </div>
+     <section id="education1" class="p-2 w-full rounded-lg text-purple-100 flex flex-col gap-3 items-center justify-center">
+       <TimelineDemo></TimelineDemo>
+     </section> 
 
 
 
