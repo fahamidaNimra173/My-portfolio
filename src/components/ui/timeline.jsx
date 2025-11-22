@@ -39,12 +39,14 @@ export const Timeline = ({ data }) => {
       <div ref={ref} className="relative lg:max-w-7xl mx-auto pb-20">
         {data.map((item, index) => (
           <div key={index} className="flex text-white justify-start pt-10 gap-4 md:pt-20 md:gap-5 lg::gap-10">
-            <div
-              className="sticky flex flex-col md:flex-row z-40 items-center top-20 self-start max-w-xs lg:max-w-sm md:w-full">
+            <div className="sticky flex flex-col md:flex-row z-40 items-center top-20 self-start max-w-xs lg:max-w-sm md:w-full">
               <div
-                className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-gradient-to-l from-fuchsia-700 via-purple-700 to-fuchsia-600 dark:bg-black flex items-center justify-center">
-                <div
-                  className="h-4 w-4 rounded-full bg-fuchsia-500 border border-neutral-700 dark:border-neutral-700 p-2" />
+                className="h-12 shadow-2xl opacity-90 shadow-black absolute left-3 md:left-3 w-12 rounded-full bg-gradient-to-l from-fuchsia-700 via-purple-700 to-fuchsia-600 flex items-center justify-center overflow-hidden">
+                <img
+                  src={item.Image}
+                  alt={item.title}
+                  className="h-full w-full object-cover"
+                />
               </div>
               <h3
                 className="hidden elsie md:block text-xl md:pl-20 md:text-5xl font-bold text-white ">
