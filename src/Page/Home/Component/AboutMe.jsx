@@ -15,7 +15,7 @@ export default function AboutMe() {
 
 
     return (
-        <div className="p-5 my-20">
+        <div className="p-5 my-10">
             {/* Header without animation */}
             <h1
                 className="text-white mb-5 dark:text-white text-4xl elsie font-bold flex  justify-center text-center">

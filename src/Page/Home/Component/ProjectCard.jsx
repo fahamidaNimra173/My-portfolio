@@ -56,7 +56,7 @@ const ProjectCard = () => {
         </svg>
       </div>
 
-      <h1 className="md:text-6xl md:my-19 my-5 text-4xl font-bold text-center elsie
+      <h1 className="md:text-6xl flex items-center justify-center md:my-15 my-5 text-4xl font-bold text-center elsie
          bg-gradient-to-r from-[#ffffff]  via-[#f7fbb9] md:via-[#ffd5fc] to-[#becb03] md:to-[#f823ff] bg-clip-text text-transparent">
         My Projects
       </h1>

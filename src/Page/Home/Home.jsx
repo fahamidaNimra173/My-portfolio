@@ -171,19 +171,26 @@ const sendEmail = (e) => {
     <div className="min-h-screen  scroll-smooth">
         
       {/* Large devices: flex row with sticky sidebar and main content */}
-      <div className="hidden  md:flex md:flex-row gap-10 md:gap-5 items-start min-h-screen">
+      <div className="hidden relative md:flex md:flex-row gap-10 md:gap-5 items-start min-h-screen">
         {/* Sidebar */}
         
         <div className=" bg-black sticky top-0 min-h-screen shadow-fuchsia-400 patterned-bg shadow-2xl text-center md:px-10 px-3 py-15 lg:px-20 md:py-20 flex-shrink">
-
-        <IntroductionCard></IntroductionCard>
+          <div className="absolute h-56 w-56 blur-2xl top-70 left-20  bg-fuchsia-800 ">
+          </div>
+          <div className="absolute h-40 w-40 blur-3xl top-70 left-40  bg-yellow-600 ">
+          </div>
+          <div className="absolute h-56 w-56 blur-2xl top-90 left-50  bg-black ">
+          </div>
+             <div className="absolute h-40 w-56 blur-3xl top-120 left-30  bg-yellow-600 ">
+          </div>
+        <IntroductionCard className="z-10"></IntroductionCard>
         </div>
 
         {/* Main Content */}
       
           
        
-        <div className="flex-1  relative pl-3 pt-30 lg:pt-25 space-y-9 max-h-screen overflow-y-auto">
+        <div className="flex-1 overflow-x-hidden  relative pl-3 pt-30 lg:pt-25 space-y-9 max-h-screen overflow-y-auto">
             <div className="absolute h-40 w-96 blur-3xl top-5 left-80 -z-10 bg-fuchsia-700 ">
             </div>     
           <div>
