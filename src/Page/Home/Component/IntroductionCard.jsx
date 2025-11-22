@@ -36,17 +36,17 @@ export default function IntroductionCard() {
                         href="https://www.facebook.com/fahmida.nimra"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-white hover:text-[#1877F2] transition"
+                        className="text-fuchsia-400 hover:text-[#1877F2] transition"
                     >
-                        <FaFacebookF size={22} />
+                        <FaFacebookF size={32} />
                     </a>
                     <a
                         href="https://www.linkedin.com/in/fahmida-nimra/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-white hover:text-[#0A66C2] transition"
+                        className="text-blue-400  hover:text-[#0A66C2] transition"
                     >
-                        <FaLinkedinIn size={22} />
+                        <FaLinkedinIn  size={32} />
                     </a>
                     <a
                         href="https://github.com/fahamidaNimra173"
@@ -54,7 +54,7 @@ export default function IntroductionCard() {
                         rel="noopener noreferrer"
                         className="text-white hover:text-gray-300 transition"
                     >
-                        <FaGithub size={22} />
+                        <FaGithub size={32} />
                     </a>
                 </div>
             </div>
