@@ -175,13 +175,17 @@ const sendEmail = (e) => {
         {/* Sidebar */}
         
         <div className=" bg-black sticky top-0 min-h-screen shadow-fuchsia-400 patterned-bg shadow-2xl text-center md:px-10 px-3 py-15 lg:px-20 md:py-20 flex-shrink">
-          <div className="absolute h-56 w-56 blur-2xl top-70 left-20  bg-fuchsia-800 ">
+          <div className="absolute h-56 w-56 blur-3xl rounded-full top-70 left-15  bg-fuchsia-700 ">
           </div>
-          <div className="absolute h-40 w-40 blur-3xl top-70 left-40  bg-yellow-600 ">
+          <div className="absolute h-56 w-56 blur-3xl -top-10 left-35  bg-fuchsia-500 ">
+          </div>
+          <div className="absolute h-40 w-40 blur-3xl top-70 left-40 bg-yellow-500 ">
           </div>
           <div className="absolute h-56 w-56 blur-2xl top-90 left-50  bg-black ">
           </div>
-             <div className="absolute h-40 w-56 blur-3xl top-120 left-30  bg-yellow-600 ">
+            <div className="absolute h-96 w-72 blur-xl top-0 left-20  bg-black ">
+          </div>
+             <div className="absolute h-56 w-56 rounded-full blur-3xl top-120 left-30  bg-yellow-700 ">
           </div>
         <IntroductionCard className="z-10"></IntroductionCard>
         </div>
