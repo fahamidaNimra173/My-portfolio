@@ -46,6 +46,7 @@ import IntroductionCard from "./Component/IntroductionCard";
 import Greetings from "./Component/Greetings";
 import AboutMe from "./Component/AboutMe";
 import ScrollVelocityDemo from "./Component/Services";
+import { TimelineDemo } from "./Component/Education";
 
 
 
@@ -265,41 +266,18 @@ const sendEmail = (e) => {
   <div class="content">
     <div class="back bg-black">
       <div class="back-content">
-        <section
-          id="education"
-          class="p-6 w-full rounded-lg text-purple-100 flex flex-row gap-5 items-center justify-center"
-        >
-          <h2 class="text-3xl lg:text-5xl font-bold mb-8 text-center">
-            Educational<br></br>
-            <span ><SparklesPreview></SparklesPreview> </span>
-          </h2>
-          
-          <div class="relative 
-                        shadow-[0_0_25px_6px_rgba(168,85,247,0.7),inset_0_0_20px_10px_rgba(168,85,247,0.8)]
-                        rounded-b-xl p-10 border-1 border-purple-600 rounded-3xl">
-            <div class=" flex flex-col items-center gap-7 py-15">
-             <PiStudentFill className="text-purple-400 h-16 w-25"></PiStudentFill>
 
-              <div className="flex flex-col items-center gap-3">
-                <h3 class="text-xl font-semibold">
-                BSc in Computer Science & Engineering (CSE)
-              </h3>
-              <p class="font-medium">
-                Port City International University
-              </p>
-              <p class="font-medium">CGPA: 3.48</p>
-              <p class="font-medium">Graduated: 2024</p>
-              </div>
-            </div>
-          </div>
-
-
-
-        </section>
       </div>
     </div>
   </div>
 </div> */}
+        <section id="education" >
+          
+          <TimelineDemo></TimelineDemo>
+
+
+
+        </section>
 
 
 
