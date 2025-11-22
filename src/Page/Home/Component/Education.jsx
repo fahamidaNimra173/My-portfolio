@@ -6,41 +6,62 @@ export function TimelineDemo() {
     {
       title: "2024",
       content: (
-        <div>
-          <p
-            className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            Built and launched Aceternity UI and Aceternity UI Pro from scratch
+        <div className="space-y-2">
+          <p className="text-xs md:text-sm text-neutral-800 dark:text-neutral-200 font-semibold">
+            Bachelor of Science (B.Sc.) in Computer Science and Engineering (CSE)
           </p>
-    
+          <p className="text-xs md:text-sm text-neutral-800 dark:text-neutral-200">
+            Institution: Port City International University
+          </p>
+          <p className="text-xs md:text-sm text-neutral-800 dark:text-neutral-200">
+            CGPA: 3.51
+          </p>
+          <p className="text-xs md:text-sm text-neutral-800 dark:text-neutral-200">
+            Background: Computer Science & Engineering
+          </p>
         </div>
       ),
     },
     {
-      title: "Early 2023",
+      title: "2019",
       content: (
-        <div>
-          <p
-            className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            I usually run out of copy, but when I see content this big, I try to
-            integrate lorem ipsum.
+        <div className="space-y-2">
+          <p className="text-xs md:text-sm text-neutral-800 dark:text-neutral-200 font-semibold">
+            Higher Secondary Certificate (HSC)
           </p>
-  
+          <p className="text-xs md:text-sm text-neutral-800 dark:text-neutral-200">
+            Institution: Patenga City Corporation Women's College
+          </p>
+          <p className="text-xs md:text-sm text-neutral-800 dark:text-neutral-200">
+            GPA: 3.58
+          </p>
+          <p className="text-xs md:text-sm text-neutral-800 dark:text-neutral-200">
+            Background: Science
+          </p>
         </div>
       ),
     },
     {
-      title: "Changelog",
+      title: "2017",
       content: (
-        <div>
-          <p
-            className="mb-4 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            Deployed 5 new components on Aceternity today
+        <div className="space-y-2">
+          <p className="text-xs md:text-sm text-neutral-800 dark:text-neutral-200 font-semibold">
+            Secondary School Certificate (SSC)
           </p>
- 
+          <p className="text-xs md:text-sm text-neutral-800 dark:text-neutral-200">
+            Institution: South Halishahar High School
+          </p>
+          <p className="text-xs md:text-sm text-neutral-800 dark:text-neutral-200">
+            GPA: 4.00
+          </p>
+          <p className="text-xs md:text-sm text-neutral-800 dark:text-neutral-200">
+            Background: Science
+          </p>
         </div>
       ),
     },
   ];
+
   return (
     <div className="relative w-full overflow-clip">
       <Timeline data={data} />
