@@ -495,13 +495,6 @@ const sendEmail = (e) => {
        <TimelineDemo></TimelineDemo>
      </section> 
 
-
-
-
-
-
-
-
                 {/* projects section */}
     <section id='project1' >
       <ProjectCard></ProjectCard>
@@ -509,11 +502,10 @@ const sendEmail = (e) => {
  
         
     
-<section
-  id="connect-me1"
-  className="md:block lg:hidden h-full mb-1 bg-black text-white relative overflow-hidden"
- 
->
+<section id="connect-me1"
+  className="md:block  lg:hidden h-full mb-1 bg-black text-white relative overflow-hidden">
+{/* <div className="absolute h-56 w-full z-50 -top-38 bg-gradient-to-b from-transparent via-black to-black blur-2xl    left-0  bg-black ">
+</div> */}
   {/* Floating Points */}
   <div className="points_wrapper">
     {[...Array(10)].map((_, i) => (
