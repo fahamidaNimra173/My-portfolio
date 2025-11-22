@@ -9,16 +9,16 @@ export function TimelineDemo() {
       content: (
         <div className="space-y-2 bg-black/10 p-3 rounded-2xl shadow-2xl shadow-black">
           <p className="text-md md:text-2xl lg:text-3xl alice  text-neutral-200 font-semibold">
-            Bachelor of Science (B.Sc.) in Computer Science and Engineering (CSE)
+            Bachelor of Science (B.Sc.) in <span className="mt-1 text-yellow-500">Computer Science and Engineering (CSE)</span>
           </p>
           <p className="text-xs md:text-lg text-neutral-200">
-            Institution: Port City International University
+             Port City International University
           </p>
           <p className="text-xs md:text-lg text-neutral-200">
             CGPA: 3.51
           </p>
           <p className="text-xs md:text-lg text-neutral-200">
-            <span className="font-semibold elsie">Background:</span>  Computer Science & Engineering
+            <span className="font-semibold elsie text-yellow-500">Background:</span>  Computer Science & Engineering
           </p>
         </div>
       ),
@@ -30,16 +30,16 @@ export function TimelineDemo() {
       content: (
         <div className="space-y-2">
           <p className="text-md md:text-2xl lg:text-3xl  alice text-neutral-200 font-semibold">
-            Higher Secondary Certificate (HSC)
+            Higher Secondary Certificate <span className="text-yellow-500">(HSC)</span>
           </p>
           <p className="text-xs md:text-lg text-neutral-200">
-            Institution: Patenga City Corporation Women's College
+            Patenga City Corporation Women's College
           </p>
           <p className="text-xs md:text-lg text-neutral-200">
             GPA: 3.58
           </p>
           <p className="text-xs md:text-lg text-neutral-200">
-            <span className="font-semibold alice">Background:</span>  Science
+            <span className="font-semibold alice text-yellow-500">Background:</span>  Science
           </p>
         </div>
       ),
@@ -50,16 +50,16 @@ export function TimelineDemo() {
       content: (
         <div className="space-y-2">
           <p className="text-md md:text-2xl lg:text-3xl  alice text-neutral-200 font-semibold">
-            Secondary School Certificate (SSC)
+            Secondary School Certificate <span className="text-yellow-500">(SSC)</span>
           </p>
           <p className="text-xs md:text-lg text-neutral-200">
-            Institution: South Halishahar High School
+             South Halishahar High School
           </p>
           <p className="text-xs md:text-lg text-neutral-200">
             GPA: 4.00
           </p>
           <p className="text-xs md:text-lg text-neutral-200">
-           <span className="font-semibold alice">Background:</span>  Science
+           <span className="font-semibold alice text-yellow-500">Background:</span>  Science
           </p>
         </div>
       ),

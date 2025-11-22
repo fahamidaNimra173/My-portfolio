@@ -23,63 +23,102 @@ export const Timeline = ({ data }) => {
 
   return (
     <div
-      className="w-full   font-sans "
+      className="w-full font-sans px-4 md:px-8 lg:px-12"
       ref={containerRef}>
-      <div className="  ">
-        <h2 className="text-lg lg:text-6xl md:text-4xl mb-4  text-purple-300 ">
-          Education <br></br> <span className="elsie text-yellow-500">Milestone</span>
+      <div className="max-w-7xl mx-auto mb-12 md:mb-16">
+        <h2 className="text-3xl alice font-bold sm:text-4xl md:text-5xl lg:text-6xl mb-4 md:mb-6 text-purple-300 leading-tight">
+          Education <br />
+          <span className="elsie text-yellow-500 inline-block lg:ml-15 mt-2">Milestone</span>
         </h2>
-        <p
-          className="text-white alice text-sm md:text-base ">
+        <p className="text-white/80 alice text-sm sm:text-base md:text-lg max-w-3xl">
           A brief overview of my academic journey, highlighting the key milestones
-          from SSC to my Bachelor’s degree in Computer Science and Engineering.
+          from SSC to my Bachelor's degree in Computer Science and Engineering.
         </p>
       </div>
 
-      <div ref={ref} className="relative lg:max-w-7xl mx-auto pb-20">
+      <div ref={ref} className="relative  mx-auto pb-20">
         {data.map((item, index) => (
-          <div key={index} className="flex text-white justify-start pt-10 gap-4 md:pt-20 md:gap-5 lg::gap-10">
-            <div className="sticky flex flex-col md:flex-row z-40 items-center top-20 self-start max-w-xs lg:max-w-sm md:w-full">
-              <div
-                className="h-12 shadow-2xl opacity-90 shadow-black absolute left-3 md:left-3 w-12 rounded-full bg-gradient-to-l from-fuchsia-700 via-purple-700 to-fuchsia-600 flex items-center justify-center overflow-hidden">
-                <img
-                  src={item.Image}
-                  alt={item.title}
-                  className="h-full w-full object-cover"
-                />
-              </div>
-              <h3
-                className="hidden elsie md:block text-xl md:pl-20 md:text-5xl font-bold text-white ">
+          <div 
+            key={index} 
+            className="flex text-white justify-start pt-10 md:pt-16 lg:pt-20 gap-6 md:gap-8 lg:gap-10"
+          >
+            {/* Icon and Title Container */}
+            <div className="sticky flex flex-col md:flex-row z-40 items-center top-20 md:top-24 self-start  ">
+              {/* Icon with animated gradient border */}
+              <motion.div
+                initial={{ scale: 0, rotate: -180 }}
+                whileInView={{ scale: 1, rotate: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="relative h-14 w-14 md:h-16 md:w-16 lg:h-16 lg:w-16 shrink-0"
+              >
+                {/* Outer glow */}
+                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-fuchsia-500 via-purple-500 to-blue-500 blur-md opacity-60 animate-pulse" />
+                
+                {/* Icon container */}
+                <div className="relative h-full w-full rounded-full bg-gradient-to-br from-fuchsia-600 via-purple-600 to-blue-600 p-[2px] shadow-2xl shadow-purple-900/50">
+                  <div className="h-full w-full rounded-full overflow-hidden bg-gray-900/50 backdrop-blur-sm">
+                    <img
+                      src={item.Image}
+                      alt={item.title}
+                      className="h-full w-full object-cover hover:scale-110 transition-transform duration-300"
+                    />
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Title for medium+ screens */}
+              <motion.h3
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 + 0.2 }}
+                viewport={{ once: true }}
+                className="hidden md:block text-2xl lg:text-4xl xl:text-5xl md:pl-8 lg:pl-12 font-bold text-white elsie leading-tight"
+              >
                 {item.title}
-              </h3>
+              </motion.h3>
             </div>
 
-            <div className="relative pl-20 pr-4 md:pl-4 w-full">
-              <h3
-                className="md:hidden  block text-2xl mb-4 text-left font-bold  text-neutral-100">
+            {/* Content Container */}
+            <div className="relative pl-6 md:pl-8 pr-4 md:pr-6 w-full">
+              {/* Title for mobile */}
+              <motion.h3
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="md:hidden block text-2xl sm:text-3xl mb-3 text-left font-bold text-white elsie"
+              >
                 {item.title}
-              </h3>
-              <h3 className="text-white">
-                {item.content}{" "}
-              </h3>
+              </motion.h3>
 
+              {/* Content card */}
+              <div
+           
+                className="bg-gradient-to-br from-purple-900/20 via-fuchsia-900/10 to-transparent backdrop-blur-sm rounded-xl p-4 md:p-6 lg:p-8 border border-purple-500/20 hover:border-purple-400/40 transition-all duration-300 shadow-lg hover:shadow-purple-500/20"
+              >
+                <div className="text-white/90 text-sm sm:text-base md:text-lg leading-relaxed">
+                  {item.content}
+                </div>
+              </div>
             </div>
           </div>
         ))}
 
+        {/* Animated timeline line */}
         <div
           style={{
             height: height + "px",
             maskImage: "linear-gradient(to bottom, transparent 0%, black 5%, black 95%, transparent 100%)"
           }}
-          className="absolute md:left-8 left-8 top-0 overflow-hidden w-[2px] bg-gradient-to-b from-transparent via-purple-600 dark:via-purple-700 to-transparent"
+          className="absolute left-[1.75rem] md:left-[2rem] lg:left-[2rem] top-0 overflow-hidden w-[3px] bg-gradient-to-b from-transparent via-purple-600/50 to-transparent"
         >
           <motion.div
             style={{
               height: heightTransform,
               opacity: opacityTransform,
             }}
-            className="absolute inset-x-0 top-0 w-[4px] bg-gradient-to-t from-purple-500 via-blue-500 to-transparent rounded-full"
+            className="absolute inset-x-0 top-0 w-[3px] bg-gradient-to-t from-purple-500 via-blue-500 to-cyan-400 rounded-full shadow-lg shadow-purple-500/50"
           />
         </div>
       </div>
